@@ -59,19 +59,6 @@ AI-powered local-business lead generation and data-processing workflow using **n
 
 ---
 
-## 🎯 Current Focus
-
-Building practical AI automation systems for businesses and continuously improving my skills in:
-
-- AI workflow engineering
-- LLM integrations
-- API-based automation
-- Business process automation
-- Data processing
-- AI agents and intelligent workflows
-
----
-
 ## 🤝 Connect With Me
 
 [LinkedIn](https://www.linkedin.com/in/shaik-kamila-parveen-80184a343/)
