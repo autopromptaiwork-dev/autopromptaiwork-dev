@@ -1,16 +1,79 @@
-## Hi there 👋
+# 👋 Hi, I'm Shaik Kamila Parveen
 
-<!--
-**autopromptaiwork-dev/autopromptaiwork-dev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### AI Automation Specialist
 
-Here are some ideas to get you started:
+I build practical AI-powered business automation systems that turn repetitive manual processes into structured, automated workflows.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+My focus is on combining **AI, workflow automation, APIs, and business tools** to solve real-world operational problems.
+
+---
+
+## 🧠 What I Work On
+
+- 🤖 AI-powered business automation
+- ⚙️ Workflow automation
+- 🔗 API & webhook integrations
+- 🧩 LLM integrations
+- 📊 Data processing & transformation
+- 🎯 Lead generation systems
+- 📄 Document & quotation automation
+- 🔄 Business process automation
+
+---
+
+## 🛠️ Tech Stack
+
+### AI & LLMs
+`Google Gemini` · `OpenAI`
+
+### Automation
+`n8n` · `Make.com`
+
+### Integrations
+`REST APIs` · `Webhooks` · `Google Workspace`
+
+### Development & Data
+`JavaScript` · `Google Sheets` · `Git` · `GitHub`
+
+---
+
+## 🚀 Featured Projects
+
+### 🏢 Business Quotation Automation
+
+Automated quotation workflow connecting **Google Forms, Google Sheets, Make.com, Google Docs, PDF generation, and Gmail** to streamline quotation creation and delivery.
+
+**Focus:** Business Process Automation · Workflow Automation · Document Generation
+
+[View Project](https://github.com/autopromptaiwork-dev/business-quotation-automation)
+
+---
+
+### 🤖 AI LeadGen Automation
+
+AI-powered local-business lead generation and data-processing workflow using **n8n, Google Gemini, Bright Data, APIs, batch processing, data extraction, and duplicate detection**.
+
+**Focus:** AI Automation · Lead Generation · API Integration · Data Processing
+
+[View Project](https://github.com/autopromptaiwork-dev/ai-leadgen-automation)
+
+---
+
+## 🎯 Current Focus
+
+Building practical AI automation systems for businesses and continuously improving my skills in:
+
+- AI workflow engineering
+- LLM integrations
+- API-based automation
+- Business process automation
+- Data processing
+- AI agents and intelligent workflows
+
+---
+
+## 🤝 Connect With Me
+
+[LinkedIn](https://www.linkedin.com/in/shaik-kamila-parveen-80184a343/)
+
+[AutoPrompt AI](https://autoprompt-ai-agency-u980.bolt.host/)
