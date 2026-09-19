@@ -1,419 +1,753 @@
-<svg width="900" height="320" viewBox="0 0 900 320"
+<svg width="900" height="420" viewBox="0 0 900 420"
      xmlns="http://www.w3.org/2000/svg">
 
-<defs>
+  <defs>
 
-  <linearGradient id="blueCyan" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#2563EB"/>
-    <stop offset="55%" stop-color="#00D9FF"/>
-    <stop offset="100%" stop-color="#00F2FF"/>
-  </linearGradient>
-
-  <radialGradient id="glowBlue">
-    <stop offset="0%" stop-color="#00D9FF" stop-opacity="0.45"/>
-    <stop offset="100%" stop-color="#00D9FF" stop-opacity="0"/>
-  </radialGradient>
-
-  <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#172554"/>
-    <stop offset="100%" stop-color="#020617"/>
-  </linearGradient>
-
-  <filter id="glow">
-    <feGaussianBlur stdDeviation="5" result="blur"/>
-    <feMerge>
-      <feMergeNode in="blur"/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
-  </filter>
-
-</defs>
+    <!-- BACKGROUND -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07111c"/>
+      <stop offset="55%" stop-color="#081a2b"/>
+      <stop offset="100%" stop-color="#02070d"/>
+    </linearGradient>
 
 
-<!-- BACKGROUND -->
-
-<rect
-  width="900"
-  height="320"
-  rx="18"
-  fill="#071019"
-/>
-
-<!-- subtle blue atmosphere -->
-
-<ellipse
-  cx="700"
-  cy="165"
-  rx="270"
-  ry="180"
-  fill="url(#glowBlue)"
-  opacity="0.45"
-/>
+    <!-- GENERAL GLOW -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
 
-<!-- LEFT CONTENT -->
-
-<!-- small AI mark -->
-
-<circle
-  cx="48"
-  cy="55"
-  r="18"
-  fill="#111827"
-  stroke="#00D9FF"
-  stroke-width="1.5"
-/>
-
-<text
-  x="48"
-  y="61"
-  text-anchor="middle"
-  font-family="Arial, sans-serif"
-  font-size="17"
-  font-weight="bold"
-  fill="#00D9FF">
-AI
-</text>
+    <!-- SOFT GLOW -->
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
 
 
-<!-- NAME -->
+    <!-- NAME NEON SWEEP -->
+    <linearGradient id="nameGlow"
+                    x1="-100%"
+                    y1="0%"
+                    x2="0%"
+                    y2="0%">
 
-<text
-  x="82"
-  y="65"
-  font-family="Arial, sans-serif"
-  font-size="34"
-  font-weight="700"
-  fill="#F8FAFC">
-Hi, I'm
-</text>
+      <stop offset="0%" stop-color="#168cff"/>
 
-<text
-  x="220"
-  y="65"
-  font-family="Arial, sans-serif"
-  font-size="34"
-  font-weight="700"
-  fill="#2196F3">
-Kamila Parveen
-</text>
+      <stop offset="38%" stop-color="#168cff"/>
 
-<text
-  x="455"
-  y="65"
-  font-size="30">
-👋
-</text>
+      <stop offset="48%" stop-color="#ffffff"/>
 
+      <stop offset="55%" stop-color="#d946ef"/>
 
-<!-- ROLE -->
+      <stop offset="65%" stop-color="#a855f7"/>
 
-<text
-  x="82"
-  y="98"
-  font-family="Arial, sans-serif"
-  font-size="20"
-  font-weight="500"
-  fill="#E2E8F0">
-AI Automation Specialist
-</text>
+      <stop offset="75%" stop-color="#168cff"/>
+
+      <stop offset="100%" stop-color="#168cff"/>
+
+      <animate
+        attributeName="x1"
+        values="-100%;100%;-100%"
+        dur="3.2s"
+        repeatCount="indefinite"/>
+
+      <animate
+        attributeName="x2"
+        values="0%;200%;0%"
+        dur="3.2s"
+        repeatCount="indefinite"/>
+
+    </linearGradient>
 
 
-<!-- DESCRIPTION -->
+    <!-- NAME NEON BLUR -->
+    <filter id="nameNeon"
+            x="-30%"
+            y="-100%"
+            width="160%"
+            height="300%">
 
-<text
-  x="82"
-  y="137"
-  font-family="Arial, sans-serif"
-  font-size="14"
-  fill="#CBD5E1">
-I build practical AI-powered business automation systems
-</text>
+      <feGaussianBlur
+        stdDeviation="4"
+        result="blur"/>
 
-<text
-  x="82"
-  y="159"
-  font-family="Arial, sans-serif"
-  font-size="14"
-  fill="#CBD5E1">
-that turn repetitive manual processes into structured,
-</text>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
 
-<text
-  x="82"
-  y="181"
-  font-family="Arial, sans-serif"
-  font-size="14"
-  fill="#CBD5E1">
-automated workflows.
-</text>
+    </filter>
+
+  </defs>
 
 
-<!-- SKILL PILLS -->
+  <!-- ====================================================== -->
+  <!-- BACKGROUND -->
+  <!-- ====================================================== -->
 
-<rect x="82" y="210" width="104" height="30" rx="15"
-      fill="#071A2B"
-      stroke="#008CFF"/>
+  <rect
+    width="900"
+    height="420"
+    rx="24"
+    fill="url(#bg)"
+  />
 
-<text x="134" y="230"
+
+  <!-- SOFT ATMOSPHERIC GLOW -->
+
+  <circle
+    cx="720"
+    cy="205"
+    r="170"
+    fill="#008cff"
+    opacity="0.05"
+    filter="url(#softGlow)"
+  />
+
+  <circle
+    cx="720"
+    cy="205"
+    r="115"
+    fill="#00eaff"
+    opacity="0.04"
+    filter="url(#softGlow)"
+  />
+
+
+  <!-- ====================================================== -->
+  <!-- LEFT CONTENT -->
+  <!-- ====================================================== -->
+
+  <g font-family="Arial, Helvetica, sans-serif">
+
+
+    <!-- AI BADGE -->
+
+    <circle
+      cx="52"
+      cy="58"
+      r="18"
+      fill="#071827"
+      stroke="#00d9ff"
+      stroke-width="2">
+
+      <animate
+        attributeName="r"
+        values="18;20;18"
+        dur="2.5s"
+        repeatCount="indefinite"/>
+
+    </circle>
+
+
+    <text
+      x="52"
+      y="64"
       text-anchor="middle"
-      font-family="Arial"
-      font-size="12"
-      fill="#00C8FF">
-Automation
-</text>
+      fill="#00d9ff"
+      font-size="13"
+      font-weight="bold">
+      AI
+    </text>
 
 
-<rect x="196" y="210" width="92" height="30" rx="15"
-      fill="#071A2B"
-      stroke="#008CFF"/>
+    <!-- ================================================== -->
+    <!-- NAME -->
+    <!-- ================================================== -->
 
-<text x="242" y="230"
+    <text
+      x="82"
+      y="68"
+      fill="#ffffff"
+      font-size="34"
+      font-weight="700">
+      Hi, I'm
+    </text>
+
+
+    <!-- NAME WITH MOVING NEON HIGHLIGHT -->
+
+    <text
+      x="82"
+      y="68"
+      dx="116"
+      fill="url(#nameGlow)"
+      filter="url(#nameNeon)"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="34"
+      font-weight="700">
+      Kamila Parveen
+    </text>
+
+
+    <!-- ================================================== -->
+    <!-- ROLE -->
+    <!-- ================================================== -->
+
+    <text
+      x="82"
+      y="103"
+      fill="#ffffff"
+      font-size="18"
+      font-weight="600">
+      AI Automation Specialist
+    </text>
+
+
+    <!-- ================================================== -->
+    <!-- DESCRIPTION -->
+    <!-- ================================================== -->
+
+    <text
+      x="82"
+      y="139"
+      fill="#d8e7f3"
+      font-size="13">
+      I build practical AI-powered business automation systems
+    </text>
+
+    <text
+      x="82"
+      y="158"
+      fill="#d8e7f3"
+      font-size="13">
+      that turn repetitive manual processes into structured,
+    </text>
+
+    <text
+      x="82"
+      y="177"
+      fill="#d8e7f3"
+      font-size="13">
+      automated workflows.
+    </text>
+
+
+    <!-- ================================================== -->
+    <!-- TAGS -->
+    <!-- ================================================== -->
+
+
+    <!-- AUTOMATION -->
+
+    <rect
+      x="82"
+      y="205"
+      width="92"
+      height="30"
+      rx="15"
+      fill="#071827"
+      stroke="#008cff"
+      stroke-width="1.5"/>
+
+    <text
+      x="128"
+      y="224"
       text-anchor="middle"
-      font-family="Arial"
-      font-size="12"
-      fill="#00C8FF">
-AI Agents
-</text>
+      fill="#00cfff"
+      font-size="11"
+      font-weight="600">
+      Automation
+    </text>
 
 
-<rect x="298" y="210" width="68" height="30" rx="15"
-      fill="#071A2B"
-      stroke="#008CFF"/>
+    <!-- AI AGENTS -->
 
-<text x="332" y="230"
+    <rect
+      x="182"
+      y="205"
+      width="91"
+      height="30"
+      rx="15"
+      fill="#071827"
+      stroke="#008cff"
+      stroke-width="1.5"/>
+
+    <text
+      x="227"
+      y="224"
       text-anchor="middle"
-      font-family="Arial"
-      font-size="12"
-      fill="#00C8FF">
-APIs
-</text>
+      fill="#00cfff"
+      font-size="11"
+      font-weight="600">
+      AI Agents
+    </text>
 
 
-<rect x="376" y="210" width="70" height="30" rx="15"
-      fill="#071A2B"
-      stroke="#008CFF"/>
+    <!-- APIs -->
 
-<text x="411" y="230"
+    <rect
+      x="281"
+      y="205"
+      width="61"
+      height="30"
+      rx="15"
+      fill="#071827"
+      stroke="#008cff"
+      stroke-width="1.5"/>
+
+    <text
+      x="311"
+      y="224"
       text-anchor="middle"
-      font-family="Arial"
-      font-size="12"
-      fill="#00C8FF">
-LLMs
-</text>
+      fill="#00cfff"
+      font-size="11"
+      font-weight="600">
+      APIs
+    </text>
 
 
-<rect x="456" y="210" width="118" height="30" rx="15"
-      fill="#071A2B"
-      stroke="#008CFF"/>
+    <!-- LLMS -->
 
-<text x="515" y="230"
+    <rect
+      x="350"
+      y="205"
+      width="66"
+      height="30"
+      rx="15"
+      fill="#071827"
+      stroke="#008cff"
+      stroke-width="1.5"/>
+
+    <text
+      x="383"
+      y="224"
       text-anchor="middle"
-      font-family="Arial"
-      font-size="12"
-      fill="#00C8FF">
-Business Tools
-</text>
+      fill="#00cfff"
+      font-size="11"
+      font-weight="600">
+      LLMs
+    </text>
 
 
-<!-- AUTOMATION NETWORK -->
+    <!-- BUSINESS TOOLS -->
 
-<!-- central glow -->
+    <rect
+      x="424"
+      y="205"
+      width="108"
+      height="30"
+      rx="15"
+      fill="#071827"
+      stroke="#008cff"
+      stroke-width="1.5"/>
 
-<circle
-  cx="665"
-  cy="158"
-  r="105"
-  fill="url(#glowBlue)"
-/>
-
-
-<!-- connecting lines -->
-
-<line x1="665" y1="158" x2="590" y2="105"
-      stroke="#00BFFF"
-      stroke-width="2"
-      opacity="0.55"/>
-
-<line x1="665" y1="158" x2="735" y2="92"
-      stroke="#00BFFF"
-      stroke-width="2"
-      opacity="0.55"/>
-
-<line x1="665" y1="158" x2="770" y2="170"
-      stroke="#00BFFF"
-      stroke-width="2"
-      opacity="0.55"/>
-
-<line x1="665" y1="158" x2="735" y2="235"
-      stroke="#00BFFF"
-      stroke-width="2"
-      opacity="0.55"/>
-
-
-<!-- TOOL NODE 1 -->
-
-<rect x="565" y="78" width="54" height="54"
-      rx="12"
-      fill="#F8FAFC"/>
-
-<text x="592" y="113"
+    <text
+      x="478"
+      y="224"
       text-anchor="middle"
-      font-family="Arial"
-      font-size="24"
-      font-weight="bold"
-      fill="#4285F4">
-G
-</text>
+      fill="#00cfff"
+      font-size="11"
+      font-weight="600">
+      Business Tools
+    </text>
+
+  </g>
 
 
-<!-- TOOL NODE 2 -->
+  <!-- ====================================================== -->
+  <!-- LAPTOP -->
+  <!-- ====================================================== -->
 
-<rect x="708" y="66" width="54" height="54"
-      rx="12"
-      fill="#F8FAFC"/>
+  <g transform="translate(625 230)">
 
-<circle cx="735" cy="93" r="17"
-        fill="#10B981"/>
 
-<text x="735" y="100"
+    <!-- LAPTOP BASE -->
+
+    <path
+      d="M-115 92 L115 92 L145 116 L-145 116 Z"
+      fill="#07111c"
+      stroke="#00d9ff"
+      stroke-width="3"/>
+
+
+    <path
+      d="M-145 116 L145 116"
+      stroke="#00d9ff"
+      stroke-width="4"
+      filter="url(#glow)"/>
+
+
+    <!-- OPENING SCREEN -->
+
+    <g
+      transform="rotate(75 0 0)"
+      opacity="0">
+
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="75 0 0"
+        to="0 0 0"
+        dur="0.9s"
+        begin="0.25s"
+        fill="freeze"/>
+
+
+      <animate
+        attributeName="opacity"
+        from="0"
+        to="1"
+        dur="0.25s"
+        begin="0.25s"
+        fill="freeze"/>
+
+
+      <!-- SCREEN FRAME -->
+
+      <rect
+        x="-105"
+        y="-88"
+        width="210"
+        height="145"
+        rx="9"
+        fill="#050b12"
+        stroke="#00d9ff"
+        stroke-width="3"/>
+
+
+      <!-- SCREEN -->
+
+      <rect
+        x="-95"
+        y="-78"
+        width="190"
+        height="125"
+        rx="5"
+        fill="#061522"
+        stroke="#008cff"
+        stroke-width="1"/>
+
+
+      <!-- CODE -->
+
+      <text
+        x="0"
+        y="5"
+        text-anchor="middle"
+        fill="#00eaff"
+        font-family="monospace"
+        font-size="38"
+        font-weight="bold"
+        filter="url(#glow)">
+        &lt;/&gt;
+      </text>
+
+    </g>
+
+  </g>
+
+
+  <!-- ====================================================== -->
+  <!-- GOOGLE ICON -->
+  <!-- ====================================================== -->
+
+  <g opacity="0">
+
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      from="625 230"
+      to="535 120"
+      dur="0.7s"
+      begin="1.15s"
+      fill="freeze"/>
+
+
+    <animateTransform
+      attributeName="transform"
+      type="scale"
+      from=".15"
+      to="1"
+      additive="sum"
+      dur="0.7s"
+      begin="1.15s"
+      fill="freeze"/>
+
+
+    <animate
+      attributeName="opacity"
+      from="0"
+      to="1"
+      dur="0.35s"
+      begin="1.15s"
+      fill="freeze"/>
+
+
+    <rect
+      x="-24"
+      y="-24"
+      width="48"
+      height="48"
+      rx="10"
+      fill="#ffffff"/>
+
+
+    <text
+      x="0"
+      y="7"
       text-anchor="middle"
+      fill="#4285F4"
       font-family="Arial"
-      font-size="17"
-      font-weight="bold"
-      fill="white">
-AI
-</text>
+      font-size="25"
+      font-weight="bold">
+      G
+    </text>
+
+  </g>
 
 
-<!-- TOOL NODE 3 -->
+  <!-- ====================================================== -->
+  <!-- AI ICON -->
+  <!-- ====================================================== -->
 
-<rect x="758" y="143" width="54" height="54"
-      rx="12"
-      fill="#F8FAFC"/>
+  <g opacity="0">
 
-<text x="785" y="177"
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      from="625 230"
+      to="690 105"
+      dur="0.75s"
+      begin="1.3s"
+      fill="freeze"/>
+
+
+    <animate
+      attributeName="opacity"
+      from="0"
+      to="1"
+      dur="0.35s"
+      begin="1.3s"
+      fill="freeze"/>
+
+
+    <rect
+      x="-24"
+      y="-24"
+      width="48"
+      height="48"
+      rx="10"
+      fill="#ffffff"/>
+
+
+    <circle
+      cx="0"
+      cy="0"
+      r="13"
+      fill="#10a37f"/>
+
+
+    <text
+      x="0"
+      y="5"
       text-anchor="middle"
+      fill="#ffffff"
       font-family="Arial"
-      font-size="22"
-      font-weight="bold"
-      fill="#111827">
-N
-</text>
+      font-size="13"
+      font-weight="bold">
+      AI
+    </text>
+
+  </g>
 
 
-<!-- TOOL NODE 4 -->
+  <!-- ====================================================== -->
+  <!-- NOTION ICON -->
+  <!-- ====================================================== -->
 
-<rect x="708" y="215" width="54" height="54"
-      rx="12"
-      fill="#F8FAFC"/>
+  <g opacity="0">
 
-<text x="735" y="249"
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      from="625 230"
+      to="755 155"
+      dur="0.8s"
+      begin="1.45s"
+      fill="freeze"/>
+
+
+    <animate
+      attributeName="opacity"
+      from="0"
+      to="1"
+      dur="0.35s"
+      begin="1.45s"
+      fill="freeze"/>
+
+
+    <rect
+      x="-24"
+      y="-24"
+      width="48"
+      height="48"
+      rx="10"
+      fill="#ffffff"/>
+
+
+    <text
+      x="0"
+      y="8"
       text-anchor="middle"
+      fill="#111111"
       font-family="Arial"
-      font-size="20"
-      font-weight="bold"
-      fill="#6366F1">
-API
-</text>
+      font-size="25"
+      font-weight="bold">
+      N
+    </text>
+
+  </g>
 
 
-<!-- LAPTOP -->
+  <!-- ====================================================== -->
+  <!-- API ICON -->
+  <!-- ====================================================== -->
 
-<polygon
-  points="600,142 724,142 712,216 588,216"
-  fill="url(#screen)"
-  stroke="#00D9FF"
-  stroke-width="3"
-  filter="url(#glow)"
-/>
+  <g opacity="0">
 
-
-<!-- CODE ON SCREEN -->
-
-<text
-  x="662"
-  y="178"
-  text-anchor="middle"
-  font-family="monospace"
-  font-size="35"
-  font-weight="bold"
-  fill="#38BDF8">
-&lt;/&gt;
-</text>
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      from="625 230"
+      to="700 300"
+      dur="0.8s"
+      begin="1.6s"
+      fill="freeze"/>
 
 
-<!-- laptop base -->
-
-<path
-  d="M570 220 L730 220 L750 234 L550 234 Z"
-  fill="#111827"
-  stroke="#00BFFF"
-  stroke-width="2"
-/>
-
-
-<!-- right tagline -->
-
-<text
-  x="820"
-  y="118"
-  font-family="Arial"
-  font-size="20"
-  font-weight="600"
-  font-style="italic"
-  fill="#00E5FF">
-Automate
-</text>
-
-<text
-  x="820"
-  y="145"
-  font-family="Arial"
-  font-size="20"
-  font-weight="600"
-  font-style="italic"
-  fill="#00E5FF">
-Simplify
-</text>
-
-<text
-  x="820"
-  y="172"
-  font-family="Arial"
-  font-size="20"
-  font-weight="600"
-  font-style="italic"
-  fill="#00E5FF">
-Grow
-</text>
+    <animate
+      attributeName="opacity"
+      from="0"
+      to="1"
+      dur="0.35s"
+      begin="1.6s"
+      fill="freeze"/>
 
 
-<!-- arrow -->
-
-<path
-  d="M820 190 Q850 210 872 187"
-  fill="none"
-  stroke="#00E5FF"
-  stroke-width="3"
-/>
-
-<path
-  d="M872 187 L862 184 M872 187 L868 197"
-  stroke="#00E5FF"
-  stroke-width="3"
-  fill="none"
-/>
+    <rect
+      x="-24"
+      y="-24"
+      width="48"
+      height="48"
+      rx="10"
+      fill="#ffffff"/>
 
 
-<!-- subtle animated glow -->
+    <text
+      x="0"
+      y="6"
+      text-anchor="middle"
+      fill="#5865f2"
+      font-family="Arial"
+      font-size="13"
+      font-weight="bold">
+      API
+    </text>
 
-<circle cx="665" cy="158" r="4" fill="#00F2FF">
-  <animate
-    attributeName="opacity"
-    values="0.2;1;0.2"
-    dur="2s"
-    repeatCount="indefinite"/>
-</circle>
+  </g>
+
+
+  <!-- ====================================================== -->
+  <!-- CONNECTION LINES -->
+  <!-- ====================================================== -->
+
+  <g
+    stroke="#00cfff"
+    stroke-width="1"
+    opacity="0.35">
+
+
+    <line
+      x1="559"
+      y1="120"
+      x2="625"
+      y2="205">
+
+      <animate
+        attributeName="opacity"
+        values="0;.35;.35"
+        dur="1.2s"
+        begin="1.2s"
+        fill="freeze"/>
+
+    </line>
+
+
+    <line
+      x1="690"
+      y1="129"
+      x2="625"
+      y2="205">
+
+      <animate
+        attributeName="opacity"
+        values="0;.35;.35"
+        dur="1.2s"
+        begin="1.35s"
+        fill="freeze"/>
+
+    </line>
+
+
+    <line
+      x1="731"
+      y1="155"
+      x2="675"
+      y2="205">
+
+      <animate
+        attributeName="opacity"
+        values="0;.35;.35"
+        dur="1.2s"
+        begin="1.45s"
+        fill="freeze"/>
+
+    </line>
+
+  </g>
+
+
+  <!-- ====================================================== -->
+  <!-- AUTOMATION TAG GLOW -->
+  <!-- ====================================================== -->
+
+  <g opacity="0.25">
+
+    <rect
+      x="82"
+      y="205"
+      width="92"
+      height="30"
+      rx="15"
+      fill="none"
+      stroke="#00eaff"
+      stroke-width="3"
+      filter="url(#softGlow)">
+
+      <animate
+        attributeName="opacity"
+        values=".15;.5;.15"
+        dur="2.5s"
+        repeatCount="indefinite"/>
+
+    </rect>
+
+  </g>
+
+
+  <!-- BOTTOM ACCENT -->
+
+  <line
+    x1="82"
+    y1="270"
+    x2="820"
+    y2="270"
+    stroke="#00d9ff"
+    stroke-width="1"
+    opacity="0.12"/>
 
 </svg>
