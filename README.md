@@ -1,4 +1,7 @@
 # 👋 Hi, I'm Shaik Kamila Parveen
+<div align="center">
+  <img src="./hero.svg" width="100%" alt="Kamila Parveen - AI Automation Specialist">
+</div>
 
 ### AI Automation Specialist
 
