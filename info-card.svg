@@ -1,0 +1,44 @@
+<svg width="900" height="420" viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg">
+<rect width="900" height="420" rx="24" fill="#0D1117"/>
+
+<text x="60" y="65" fill="#00F2FF" font-family="monospace" font-size="28" font-weight="bold">
+AUTOPROMPT AI
+</text>
+
+<text x="60" y="98" fill="#8B949E" font-family="monospace" font-size="16">
+AI AUTOMATION SYSTEMS
+</text>
+
+<g stroke="#00F2FF" stroke-width="2" fill="none">
+<line x1="180" y1="210" x2="330" y2="210"/>
+<line x1="450" y1="210" x2="600" y2="210"/>
+<line x1="720" y1="210" x2="790" y2="210"/>
+</g>
+
+<g fill="#161B22" stroke="#00F2FF" stroke-width="2">
+<rect x="60" y="165" width="120" height="90" rx="16"/>
+<rect x="330" y="165" width="120" height="90" rx="16"/>
+<rect x="600" y="165" width="120" height="90" rx="16"/>
+</g>
+
+<text x="120" y="205" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="18">AI</text>
+<text x="120" y="230" text-anchor="middle" fill="#8B949E" font-family="monospace" font-size="13">LLMs</text>
+
+<text x="390" y="205" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="18">AUTOMATE</text>
+<text x="390" y="230" text-anchor="middle" fill="#8B949E" font-family="monospace" font-size="13">n8n • Make</text>
+
+<text x="660" y="205" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="18">INTEGRATE</text>
+<text x="660" y="230" text-anchor="middle" fill="#8B949E" font-family="monospace" font-size="13">APIs • Webhooks</text>
+
+<text x="820" y="205" text-anchor="middle" fill="#00F2FF" font-family="monospace" font-size="15">BUSINESS</text>
+<text x="820" y="230" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="13">RESULTS</text>
+
+<text x="60" y="330" fill="#8B949E" font-family="monospace" font-size="14">
+Building practical AI-powered business workflows
+</text>
+
+<circle cx="60" cy="365" r="5" fill="#00F2FF"/>
+<text x="75" y="370" fill="#00F2FF" font-family="monospace" font-size="13">
+SYSTEMS ONLINE
+</text>
+</svg>
