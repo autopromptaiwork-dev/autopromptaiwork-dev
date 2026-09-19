@@ -57,10 +57,3 @@ AI-powered local-business lead generation and data-processing workflow using **n
 
 [View Project](https://github.com/autopromptaiwork-dev/ai-leadgen-automation)
 
----
-
-## 🤝 Connect With Me
-
-[LinkedIn](https://www.linkedin.com/in/shaik-kamila-parveen-80184a343/)
-
-[AutoPrompt AI](https://autoprompt-ai-agency-u980.bolt.host/)
