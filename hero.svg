@@ -3,31 +3,65 @@
 
   <defs>
 
+    <!-- ====================================================== -->
     <!-- BACKGROUND -->
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <!-- ====================================================== -->
+
+    <linearGradient id="bg"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="1">
+
       <stop offset="0%" stop-color="#07111c"/>
       <stop offset="55%" stop-color="#081a2b"/>
       <stop offset="100%" stop-color="#02070d"/>
+
     </linearGradient>
 
 
+    <!-- ====================================================== -->
     <!-- GENERAL GLOW -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
+    <!-- ====================================================== -->
+
+    <filter id="glow"
+            x="-50%"
+            y="-50%"
+            width="200%"
+            height="200%">
+
+      <feGaussianBlur
+        stdDeviation="5"
+        result="blur"/>
+
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
+
     </filter>
 
 
+    <!-- ====================================================== -->
     <!-- SOFT GLOW -->
-    <filter id="softGlow">
+    <!-- ====================================================== -->
+
+    <filter id="softGlow"
+            x="-50%"
+            y="-50%"
+            width="200%"
+            height="200%">
+
       <feGaussianBlur stdDeviation="3"/>
+
     </filter>
 
 
+    <!-- ====================================================== -->
     <!-- NAME NEON SWEEP -->
+    <!-- Softer + slower -->
+    <!-- ====================================================== -->
+
     <linearGradient id="nameGlow"
                     x1="-100%"
                     y1="0%"
@@ -35,43 +69,41 @@
                     y2="0%">
 
       <stop offset="0%" stop-color="#168cff"/>
-
-      <stop offset="38%" stop-color="#168cff"/>
-
-      <stop offset="48%" stop-color="#ffffff"/>
-
-      <stop offset="55%" stop-color="#d946ef"/>
-
-      <stop offset="65%" stop-color="#a855f7"/>
-
-      <stop offset="75%" stop-color="#168cff"/>
-
+      <stop offset="42%" stop-color="#168cff"/>
+      <stop offset="49%" stop-color="#b9dcff"/>
+      <stop offset="53%" stop-color="#d946ef"/>
+      <stop offset="58%" stop-color="#a855f7"/>
+      <stop offset="65%" stop-color="#168cff"/>
       <stop offset="100%" stop-color="#168cff"/>
 
       <animate
         attributeName="x1"
         values="-100%;100%;-100%"
-        dur="3.2s"
+        dur="5.5s"
         repeatCount="indefinite"/>
 
       <animate
         attributeName="x2"
         values="0%;200%;0%"
-        dur="3.2s"
+        dur="5.5s"
         repeatCount="indefinite"/>
 
     </linearGradient>
 
 
+    <!-- ====================================================== -->
     <!-- NAME NEON BLUR -->
+    <!-- Reduced glow -->
+    <!-- ====================================================== -->
+
     <filter id="nameNeon"
-            x="-30%"
-            y="-100%"
-            width="160%"
-            height="300%">
+            x="-20%"
+            y="-80%"
+            width="140%"
+            height="260%">
 
       <feGaussianBlur
-        stdDeviation="4"
+        stdDeviation="1.6"
         result="blur"/>
 
       <feMerge>
@@ -92,11 +124,12 @@
     width="900"
     height="420"
     rx="24"
-    fill="url(#bg)"
-  />
+    fill="url(#bg)"/>
 
 
-  <!-- SOFT ATMOSPHERIC GLOW -->
+  <!-- ====================================================== -->
+  <!-- ATMOSPHERIC GLOW -->
+  <!-- ====================================================== -->
 
   <circle
     cx="720"
@@ -104,8 +137,7 @@
     r="170"
     fill="#008cff"
     opacity="0.05"
-    filter="url(#softGlow)"
-  />
+    filter="url(#softGlow)"/>
 
   <circle
     cx="720"
@@ -113,8 +145,7 @@
     r="115"
     fill="#00eaff"
     opacity="0.04"
-    filter="url(#softGlow)"
-  />
+    filter="url(#softGlow)"/>
 
 
   <!-- ====================================================== -->
@@ -124,7 +155,9 @@
   <g font-family="Arial, Helvetica, sans-serif">
 
 
+    <!-- ================================================== -->
     <!-- AI BADGE -->
+    <!-- ================================================== -->
 
     <circle
       cx="52"
@@ -150,7 +183,9 @@
       fill="#00d9ff"
       font-size="13"
       font-weight="bold">
+
       AI
+
     </text>
 
 
@@ -164,11 +199,15 @@
       fill="#ffffff"
       font-size="34"
       font-weight="700">
+
       Hi, I'm
+
     </text>
 
 
-    <!-- NAME WITH MOVING NEON HIGHLIGHT -->
+    <!-- ================================================== -->
+    <!-- NAME WITH SUBTLE MOVING HIGHLIGHT -->
+    <!-- ================================================== -->
 
     <text
       x="82"
@@ -179,7 +218,9 @@
       font-family="Arial, Helvetica, sans-serif"
       font-size="34"
       font-weight="700">
+
       Kamila Parveen
+
     </text>
 
 
@@ -193,7 +234,9 @@
       fill="#ffffff"
       font-size="18"
       font-weight="600">
+
       AI Automation Specialist
+
     </text>
 
 
@@ -206,7 +249,9 @@
       y="139"
       fill="#d8e7f3"
       font-size="13">
+
       I build practical AI-powered business automation systems
+
     </text>
 
     <text
@@ -214,7 +259,9 @@
       y="158"
       fill="#d8e7f3"
       font-size="13">
+
       that turn repetitive manual processes into structured,
+
     </text>
 
     <text
@@ -222,128 +269,217 @@
       y="177"
       fill="#d8e7f3"
       font-size="13">
+
       automated workflows.
+
     </text>
 
 
-    <!-- ================================================== -->
-    <!-- TAGS -->
-    <!-- ================================================== -->
+    <!-- ====================================================== -->
+    <!-- TAG STYLES -->
+    <!-- ====================================================== -->
+
+    <style>
+
+      .tag-box {
+        fill: #071827;
+        stroke: #00c8ff;
+        stroke-width: 1.5;
+      }
+
+      .tag-text {
+        text-anchor: middle;
+        fill: #00c8ff;
+        font-size: 11px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /*
+        All tags begin above their final position
+        and slide downward into place.
+      */
+
+      .tag-group {
+        opacity: 0;
+        animation-name: tagDrop;
+        animation-duration: 0.7s;
+        animation-timing-function: cubic-bezier(.2,.8,.2,1);
+        animation-fill-mode: forwards;
+      }
+
+      .tag-row-1 {
+        animation-delay: 1.8s;
+      }
+
+      .tag-row-2 {
+        animation-delay: 2.4s;
+      }
+
+      .tag-row-3 {
+        animation-delay: 3.0s;
+      }
+
+      @keyframes tagDrop {
+
+        0% {
+          opacity: 0;
+          transform: translateY(-35px);
+        }
+
+        70% {
+          opacity: 1;
+          transform: translateY(5px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+      }
+
+      /*
+        Purple neon hover effect
+      */
+
+      .tag-box:hover {
+        stroke: #b66cff;
+        filter: drop-shadow(0 0 6px #b66cff);
+      }
+
+      .tag-text:hover {
+        fill: #b66cff;
+      }
+
+    </style>
 
 
-    <!-- AUTOMATION -->
+    <!-- ====================================================== -->
+    <!-- ROW 1 -->
+    <!-- APIs + LLMs -->
+    <!-- ====================================================== -->
 
-    <rect
-      x="82"
-      y="205"
-      width="92"
-      height="30"
-      rx="15"
-      fill="#071827"
-      stroke="#008cff"
-      stroke-width="1.5"/>
+    <g class="tag-group tag-row-1">
 
-    <text
-      x="128"
-      y="224"
-      text-anchor="middle"
-      fill="#00cfff"
-      font-size="11"
-      font-weight="600">
-      Automation
-    </text>
+      <!-- APIs -->
 
+      <rect
+        class="tag-box"
+        x="82"
+        y="205"
+        width="92"
+        height="30"
+        rx="15"/>
 
-    <!-- AI AGENTS -->
+      <text
+        class="tag-text"
+        x="128"
+        y="224">
 
-    <rect
-      x="182"
-      y="205"
-      width="91"
-      height="30"
-      rx="15"
-      fill="#071827"
-      stroke="#008cff"
-      stroke-width="1.5"/>
+        APIs
 
-    <text
-      x="227"
-      y="224"
-      text-anchor="middle"
-      fill="#00cfff"
-      font-size="11"
-      font-weight="600">
-      AI Agents
-    </text>
+      </text>
 
 
-    <!-- APIs -->
+      <!-- LLMs -->
 
-    <rect
-      x="281"
-      y="205"
-      width="61"
-      height="30"
-      rx="15"
-      fill="#071827"
-      stroke="#008cff"
-      stroke-width="1.5"/>
+      <rect
+        class="tag-box"
+        x="184"
+        y="205"
+        width="92"
+        height="30"
+        rx="15"/>
 
-    <text
-      x="311"
-      y="224"
-      text-anchor="middle"
-      fill="#00cfff"
-      font-size="11"
-      font-weight="600">
-      APIs
-    </text>
+      <text
+        class="tag-text"
+        x="230"
+        y="224">
 
+        LLMs
 
-    <!-- LLMS -->
+      </text>
 
-    <rect
-      x="350"
-      y="205"
-      width="66"
-      height="30"
-      rx="15"
-      fill="#071827"
-      stroke="#008cff"
-      stroke-width="1.5"/>
-
-    <text
-      x="383"
-      y="224"
-      text-anchor="middle"
-      fill="#00cfff"
-      font-size="11"
-      font-weight="600">
-      LLMs
-    </text>
+    </g>
 
 
-    <!-- BUSINESS TOOLS -->
+    <!-- ====================================================== -->
+    <!-- ROW 2 -->
+    <!-- Automation + AI Agents -->
+    <!-- ====================================================== -->
 
-    <rect
-      x="424"
-      y="205"
-      width="108"
-      height="30"
-      rx="15"
-      fill="#071827"
-      stroke="#008cff"
-      stroke-width="1.5"/>
+    <g class="tag-group tag-row-2">
 
-    <text
-      x="478"
-      y="224"
-      text-anchor="middle"
-      fill="#00cfff"
-      font-size="11"
-      font-weight="600">
-      Business Tools
-    </text>
+      <!-- Automation -->
+
+      <rect
+        class="tag-box"
+        x="82"
+        y="243"
+        width="92"
+        height="30"
+        rx="15"/>
+
+      <text
+        class="tag-text"
+        x="128"
+        y="262">
+
+        Automation
+
+      </text>
+
+
+      <!-- AI Agents -->
+
+      <rect
+        class="tag-box"
+        x="184"
+        y="243"
+        width="92"
+        height="30"
+        rx="15"/>
+
+      <text
+        class="tag-text"
+        x="230"
+        y="262">
+
+        AI Agents
+
+      </text>
+
+    </g>
+
+
+    <!-- ====================================================== -->
+    <!-- ROW 3 -->
+    <!-- Business Tools -->
+    <!-- Centered between the two columns -->
+    <!-- ====================================================== -->
+
+    <g class="tag-group tag-row-3">
+
+      <rect
+        class="tag-box"
+        x="128"
+        y="281"
+        width="110"
+        height="30"
+        rx="15"/>
+
+      <text
+        class="tag-text"
+        x="183"
+        y="300">
+
+        Business Tools
+
+      </text>
+
+    </g>
+
 
   </g>
 
@@ -355,14 +491,15 @@
   <g transform="translate(625 230)">
 
 
+    <!-- ================================================== -->
     <!-- LAPTOP BASE -->
+    <!-- ================================================== -->
 
     <path
       d="M-115 92 L115 92 L145 116 L-145 116 Z"
       fill="#07111c"
       stroke="#00d9ff"
       stroke-width="3"/>
-
 
     <path
       d="M-145 116 L145 116"
@@ -371,7 +508,9 @@
       filter="url(#glow)"/>
 
 
+    <!-- ================================================== -->
     <!-- OPENING SCREEN -->
+    <!-- ================================================== -->
 
     <g
       transform="rotate(75 0 0)"
@@ -385,7 +524,6 @@
         dur="0.9s"
         begin="0.25s"
         fill="freeze"/>
-
 
       <animate
         attributeName="opacity"
@@ -433,7 +571,9 @@
         font-size="38"
         font-weight="bold"
         filter="url(#glow)">
+
         &lt;/&gt;
+
       </text>
 
     </g>
@@ -456,7 +596,6 @@
       begin="1.15s"
       fill="freeze"/>
 
-
     <animateTransform
       attributeName="transform"
       type="scale"
@@ -467,7 +606,6 @@
       begin="1.15s"
       fill="freeze"/>
 
-
     <animate
       attributeName="opacity"
       from="0"
@@ -475,7 +613,6 @@
       dur="0.35s"
       begin="1.15s"
       fill="freeze"/>
-
 
     <rect
       x="-24"
@@ -485,7 +622,6 @@
       rx="10"
       fill="#ffffff"/>
 
-
     <text
       x="0"
       y="7"
@@ -494,7 +630,9 @@
       font-family="Arial"
       font-size="25"
       font-weight="bold">
+
       G
+
     </text>
 
   </g>
@@ -515,7 +653,6 @@
       begin="1.3s"
       fill="freeze"/>
 
-
     <animate
       attributeName="opacity"
       from="0"
@@ -523,7 +660,6 @@
       dur="0.35s"
       begin="1.3s"
       fill="freeze"/>
-
 
     <rect
       x="-24"
@@ -533,13 +669,11 @@
       rx="10"
       fill="#ffffff"/>
 
-
     <circle
       cx="0"
       cy="0"
       r="13"
       fill="#10a37f"/>
-
 
     <text
       x="0"
@@ -549,7 +683,9 @@
       font-family="Arial"
       font-size="13"
       font-weight="bold">
+
       AI
+
     </text>
 
   </g>
@@ -570,7 +706,6 @@
       begin="1.45s"
       fill="freeze"/>
 
-
     <animate
       attributeName="opacity"
       from="0"
@@ -578,7 +713,6 @@
       dur="0.35s"
       begin="1.45s"
       fill="freeze"/>
-
 
     <rect
       x="-24"
@@ -588,7 +722,6 @@
       rx="10"
       fill="#ffffff"/>
 
-
     <text
       x="0"
       y="8"
@@ -597,7 +730,9 @@
       font-family="Arial"
       font-size="25"
       font-weight="bold">
+
       N
+
     </text>
 
   </g>
@@ -618,7 +753,6 @@
       begin="1.6s"
       fill="freeze"/>
 
-
     <animate
       attributeName="opacity"
       from="0"
@@ -626,7 +760,6 @@
       dur="0.35s"
       begin="1.6s"
       fill="freeze"/>
-
 
     <rect
       x="-24"
@@ -636,7 +769,6 @@
       rx="10"
       fill="#ffffff"/>
 
-
     <text
       x="0"
       y="6"
@@ -645,7 +777,9 @@
       font-family="Arial"
       font-size="13"
       font-weight="bold">
+
       API
+
     </text>
 
   </g>
@@ -659,7 +793,6 @@
     stroke="#00cfff"
     stroke-width="1"
     opacity="0.35">
-
 
     <line
       x1="559"
@@ -719,7 +852,7 @@
 
     <rect
       x="82"
-      y="205"
+      y="243"
       width="92"
       height="30"
       rx="15"
@@ -739,15 +872,18 @@
   </g>
 
 
+  <!-- ====================================================== -->
   <!-- BOTTOM ACCENT -->
+  <!-- ====================================================== -->
 
   <line
     x1="82"
-    y1="270"
+    y1="330"
     x2="820"
-    y2="270"
+    y2="330"
     stroke="#00d9ff"
     stroke-width="1"
     opacity="0.12"/>
+
 
 </svg>
