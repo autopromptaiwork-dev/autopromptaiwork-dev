@@ -1,7 +1,63 @@
-# 👋 Hi, I'm Shaik Kamila Parveen
 <div align="center">
   <img src="./hero.svg" width="100%" alt="Kamila Parveen - AI Automation Specialist">
 </div>
+## 🛠️ Tech Stack
+
+<table>
+<tr>
+
+<td align="center" width="120">
+<img src="https://cdn.simpleicons.org/make/6D00CC" width="45"><br>
+<b>Make.com</b>
+</td>
+
+<td align="center" width="120">
+<img src="https://cdn.simpleicons.org/n8n/EA4B71" width="45"><br>
+<b>n8n</b>
+</td>
+
+<td align="center" width="120">
+<img src="https://cdn.simpleicons.org/openai/FFFFFF" width="45"><br>
+<b>OpenAI</b>
+</td>
+
+<td align="center" width="120">
+<img src="https://cdn.simpleicons.org/googlegemini/8E75B2" width="45"><br>
+<b>Gemini</b>
+</td>
+
+<td align="center" width="120">
+<img src="https://cdn.simpleicons.org/googleworkspace/4285F4" width="45"><br>
+<b>Google Workspace</b>
+</td>
+
+<td align="center" width="120">
+<img src="https://cdn.simpleicons.org/javascript/F7DF1E" width="45"><br>
+<b>JavaScript</b>
+</td>
+
+<td align="center" width="120">
+<img src="https://cdn.simpleicons.org/googlesheets/34A853" width="45"><br>
+<b>Google Sheets</b>
+</td>
+
+<td align="center" width="120">
+<img src="https://cdn.simpleicons.org/git/F05032" width="45"><br>
+<b>Git</b>
+</td>
+
+<td align="center" width="120">
+<img src="https://cdn.simpleicons.org/github/FFFFFF" width="45"><br>
+<b>GitHub</b>
+</td>
+
+<td align="center" width="120">
+<img src="https://cdn.simpleicons.org/docker/2496ED" width="45"><br>
+<b>Docker</b>
+</td>
+
+</tr>
+</table>
 
 ### AI Automation Specialist
 
@@ -21,23 +77,6 @@ My focus is on combining **AI, workflow automation, APIs, and business tools** t
 - 🎯 Lead generation systems
 - 📄 Document & quotation automation
 - 🔄 Business process automation
-
----
-
-## 🛠️ Tech Stack
-
-### AI & LLMs
-`Google Gemini` · `OpenAI`
-
-### Automation
-`n8n` · `Make.com`
-
-### Integrations
-`REST APIs` · `Webhooks` · `Google Workspace`
-
-### Development & Data
-`JavaScript` · `Google Sheets` · `Git` · `GitHub`
-
 ---
 
 ## 🚀 Featured Projects
