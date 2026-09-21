@@ -1,0 +1,480 @@
+<svg width="1000" height="520" viewBox="0 0 1000 520"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#061522"/>
+      <stop offset="55%" stop-color="#071827"/>
+      <stop offset="100%" stop-color="#030A11"/>
+    </linearGradient>
+
+    <!-- Card gradients -->
+    <linearGradient id="cardBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A2134"/>
+      <stop offset="100%" stop-color="#06121E"/>
+    </linearGradient>
+
+    <linearGradient id="cardPurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#17102D"/>
+      <stop offset="100%" stop-color="#080D18"/>
+    </linearGradient>
+
+    <!-- Cyan glow -->
+    <filter id="cyanGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Purple glow -->
+    <filter id="purpleGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle shadow -->
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10"
+                    flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+
+  </defs>
+
+  <!-- BACKGROUND -->
+  <rect width="1000" height="520" rx="28" fill="url(#bg)"/>
+
+  <!-- Decorative glow -->
+  <circle cx="130" cy="120" r="150"
+          fill="#00CFFF" opacity="0.035"/>
+
+  <circle cx="870" cy="350" r="180"
+          fill="#8E5CFF" opacity="0.04"/>
+
+  <!-- HEADER -->
+  <text x="500" y="55"
+        text-anchor="middle"
+        fill="#F4F8FC"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="27"
+        font-weight="700">
+    🚀 Featured Projects
+  </text>
+
+  <text x="500" y="82"
+        text-anchor="middle"
+        fill="#7F94A8"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="13">
+    Real automation systems built with AI, workflows and APIs
+  </text>
+
+  <!-- HEADER LINE -->
+  <line x1="100" y1="105" x2="900" y2="105"
+        stroke="#173247"
+        stroke-width="1"/>
+
+
+  <!-- ====================================================== -->
+  <!-- PROJECT 1 -->
+  <!-- ====================================================== -->
+
+  <rect x="55" y="130"
+        width="430"
+        height="335"
+        rx="22"
+        fill="url(#cardBlue)"
+        stroke="#008CFF"
+        stroke-width="1.3"
+        filter="url(#shadow)"/>
+
+  <!-- Cyan accent -->
+  <rect x="55" y="130"
+        width="430"
+        height="4"
+        rx="2"
+        fill="#00D9FF"
+        filter="url(#cyanGlow)"/>
+
+  <!-- Project icon -->
+  <circle cx="100" cy="180"
+          r="28"
+          fill="#071E30"
+          stroke="#00CFFF"
+          stroke-width="1.5"/>
+
+  <text x="100" y="189"
+        text-anchor="middle"
+        font-size="25">
+    🏢
+  </text>
+
+  <!-- Title -->
+  <text x="145" y="177"
+        fill="#F4F8FC"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="20"
+        font-weight="700">
+    Business Quotation
+  </text>
+
+  <text x="145" y="202"
+        fill="#00D9FF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="16"
+        font-weight="600">
+    Automation
+  </text>
+
+
+  <!-- Workflow -->
+
+  <!-- Google Forms -->
+  <rect x="80" y="245"
+        width="105"
+        height="42"
+        rx="10"
+        fill="#0B2538"
+        stroke="#1C536F"/>
+
+  <text x="132" y="271"
+        text-anchor="middle"
+        fill="#EAF7FF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="12"
+        font-weight="600">
+    Google Forms
+  </text>
+
+  <!-- Arrow -->
+  <line x1="185" y1="266"
+        x2="215" y2="266"
+        stroke="#00D9FF"
+        stroke-width="1.5"/>
+
+  <polygon points="215,266 208,262 208,270"
+           fill="#00D9FF"/>
+
+  <!-- Make -->
+  <rect x="215" y="245"
+        width="105"
+        height="42"
+        rx="10"
+        fill="#0B2538"
+        stroke="#1C536F"/>
+
+  <text x="267" y="271"
+        text-anchor="middle"
+        fill="#EAF7FF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="12"
+        font-weight="600">
+    Make.com
+  </text>
+
+  <!-- Arrow -->
+  <line x1="320" y1="266"
+        x2="350" y2="266"
+        stroke="#00D9FF"
+        stroke-width="1.5"/>
+
+  <polygon points="350,266 343,262 343,270"
+           fill="#00D9FF"/>
+
+  <!-- PDF -->
+  <rect x="350" y="245"
+        width="105"
+        height="42"
+        rx="10"
+        fill="#0B2538"
+        stroke="#1C536F"/>
+
+  <text x="402" y="271"
+        text-anchor="middle"
+        fill="#EAF7FF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="12"
+        font-weight="600">
+    PDF + Gmail
+  </text>
+
+
+  <!-- Description -->
+  <text x="80" y="325"
+        fill="#C4D2DE"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="13">
+    Automated quotation generation
+  </text>
+
+  <text x="80" y="346"
+        fill="#C4D2DE"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="13">
+    from form submission to delivery.
+  </text>
+
+
+  <!-- Tools -->
+  <rect x="80" y="370"
+        width="78"
+        height="25"
+        rx="12"
+        fill="#082A40"
+        stroke="#087DB0"/>
+
+  <text x="119" y="387"
+        text-anchor="middle"
+        fill="#7DEBFF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="10">
+    Make.com
+  </text>
+
+  <rect x="165" y="370"
+        width="92"
+        height="25"
+        rx="12"
+        fill="#082A40"
+        stroke="#087DB0"/>
+
+  <text x="211" y="387"
+        text-anchor="middle"
+        fill="#7DEBFF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="10">
+    Google Workspace
+  </text>
+
+
+  <!-- Button -->
+  <rect x="80" y="420"
+        width="145"
+        height="30"
+        rx="15"
+        fill="#06283A"
+        stroke="#00D9FF"/>
+
+  <text x="152" y="440"
+        text-anchor="middle"
+        fill="#00D9FF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="11"
+        font-weight="700">
+    EXPLORE PROJECT →
+  </text>
+
+
+  <!-- ====================================================== -->
+  <!-- PROJECT 2 -->
+  <!-- ====================================================== -->
+
+  <rect x="515" y="130"
+        width="430"
+        height="335"
+        rx="22"
+        fill="url(#cardPurple)"
+        stroke="#8E5CFF"
+        stroke-width="1.3"
+        filter="url(#shadow)"/>
+
+  <!-- Purple accent -->
+  <rect x="515" y="130"
+        width="430"
+        height="4"
+        rx="2"
+        fill="#9B6CFF"
+        filter="url(#purpleGlow)"/>
+
+
+  <!-- Project icon -->
+  <circle cx="560" cy="180"
+          r="28"
+          fill="#17112D"
+          stroke="#9B6CFF"
+          stroke-width="1.5"/>
+
+  <text x="560" y="189"
+        text-anchor="middle"
+        font-size="25">
+    🤖
+  </text>
+
+
+  <!-- Title -->
+  <text x="605" y="177"
+        fill="#F4F8FC"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="20"
+        font-weight="700">
+    AI LeadGen
+  </text>
+
+  <text x="605" y="202"
+        fill="#B18AFF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="16"
+        font-weight="600">
+    Automation
+  </text>
+
+
+  <!-- Workflow -->
+
+  <!-- Search -->
+  <rect x="540" y="245"
+        width="105"
+        height="42"
+        rx="10"
+        fill="#17112D"
+        stroke="#5E3FA4"/>
+
+  <text x="592" y="271"
+        text-anchor="middle"
+        fill="#F1EFFF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="12"
+        font-weight="600">
+    Business Data
+  </text>
+
+  <!-- Arrow -->
+  <line x1="645" y1="266"
+        x2="675" y2="266"
+        stroke="#A978FF"
+        stroke-width="1.5"/>
+
+  <polygon points="675,266 668,262 668,270"
+           fill="#A978FF"/>
+
+  <!-- n8n -->
+  <rect x="675" y="245"
+        width="105"
+        height="42"
+        rx="10"
+        fill="#17112D"
+        stroke="#5E3FA4"/>
+
+  <text x="727" y="271"
+        text-anchor="middle"
+        fill="#F1EFFF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="12"
+        font-weight="600">
+    n8n + Gemini
+  </text>
+
+  <!-- Arrow -->
+  <line x1="780" y1="266"
+        x2="810" y2="266"
+        stroke="#A978FF"
+        stroke-width="1.5"/>
+
+  <polygon points="810,266 803,262 803,270"
+           fill="#A978FF"/>
+
+  <!-- Output -->
+  <rect x="810" y="245"
+        width="105"
+        height="42"
+        rx="10"
+        fill="#17112D"
+        stroke="#5E3FA4"/>
+
+  <text x="862" y="271"
+        text-anchor="middle"
+        fill="#F1EFFF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="12"
+        font-weight="600">
+    Clean Leads
+  </text>
+
+
+  <!-- Description -->
+  <text x="540" y="325"
+        fill="#CFC7E8"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="13">
+    AI-powered lead generation
+  </text>
+
+  <text x="540" y="346"
+        fill="#CFC7E8"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="13">
+    with automated data processing.
+  </text>
+
+
+  <!-- Tools -->
+  <rect x="540" y="370"
+        width="48"
+        height="25"
+        rx="12"
+        fill="#1A1232"
+        stroke="#7651C7"/>
+
+  <text x="564" y="387"
+        text-anchor="middle"
+        fill="#C3A8FF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="10">
+    n8n
+  </text>
+
+  <rect x="595" y="370"
+        width="65"
+        height="25"
+        rx="12"
+        fill="#1A1232"
+        stroke="#7651C7"/>
+
+  <text x="627" y="387"
+        text-anchor="middle"
+        fill="#C3A8FF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="10">
+    Gemini
+  </text>
+
+  <rect x="667" y="370"
+        width="78"
+        height="25"
+        rx="12"
+        fill="#1A1232"
+        stroke="#7651C7"/>
+
+  <text x="706" y="387"
+        text-anchor="middle"
+        fill="#C3A8FF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="10">
+    Bright Data
+  </text>
+
+
+  <!-- Button -->
+  <rect x="540" y="420"
+        width="145"
+        height="30"
+        rx="15"
+        fill="#17102D"
+        stroke="#A978FF"/>
+
+  <text x="612" y="440"
+        text-anchor="middle"
+        fill="#B995FF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="11"
+        font-weight="700">
+    EXPLORE PROJECT →
+  </text>
+
+</svg>
