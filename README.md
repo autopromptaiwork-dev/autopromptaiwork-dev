@@ -60,6 +60,8 @@
 </tr>
 </table>
 
+<img src="./projects.svg" width="100%" alt="Featured Projects">
+
 ### AI Automation Specialist
 
 I build practical AI-powered business automation systems that turn repetitive manual processes into structured, automated workflows.
