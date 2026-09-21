@@ -1,6 +1,7 @@
 <div align="center">
   <img src="./hero.svg" width="100%" alt="Kamila Parveen - AI Automation Specialist">
 </div>
+
 ## 🛠️ Tech Stack
 
 <table>
@@ -17,7 +18,7 @@
 </td>
 
 <td align="center" width="120">
-<img src="https://cdn.simpleicons.org/openai/FFFFFF" width="45"><br>
+<img src="https://cdn.jsdelivr.net/gh/callback-io/allogo@main/public/logos/openai/icon.svg" width="45"><br>
 <b>OpenAI</b>
 </td>
 
@@ -27,7 +28,7 @@
 </td>
 
 <td align="center" width="120">
-<img src="https://cdn.simpleicons.org/googleworkspace/4285F4" width="45"><br>
+<img src="https://cdn.jsdelivr.net/gh/callback-io/allogo@main/public/logos/google-workspace/icon.svg" width="45"><br>
 <b>Google Workspace</b>
 </td>
 
