@@ -89,5 +89,5 @@ My focus is on combining **AI, workflow automation, APIs, and business tools** t
 ## 🐍 GitHub Contributions
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/autopromptaiwork-dev/autopromptaiwork-dev/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake">
+<img src="https://raw.githubusercontent.com/autopromptaiwork-dev/autopromptaiwork-dev/gh-pages/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake">
 </div>
