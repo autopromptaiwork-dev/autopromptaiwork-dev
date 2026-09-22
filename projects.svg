@@ -1,972 +1,402 @@
-<svg width="1200" height="900" viewBox="0 0 1200 900"
-     xmlns="http://www.w3.org/2000/svg">
+<svg width="1344" height="896" viewBox="0 0 1344 896" xmlns="http://www.w3.org/2000/svg" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpiNjUwYzkyOS0wOWRlLTQ5YmUtYTdkOS03ZDRmZDc1MzY4YmIAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaJCZncO8P7nRnTQG89HVOo8AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo0YzUzNWMxOC05ZTgxLTQyYjYtYTE1NC0zNGE4NWJmNjFlZjRscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoDOVVnfi/WJuFfUTwApYV6gAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggT/yH+mh0VuFX2OyLF6xGgn+YdxXdHcD+zx+rKi8voQ2kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaO7EJ/xsP44hjTCYwjuexwoAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCCEc4GrEpltGbJwkMzhm0qB3fxkawW6aiAO8MvxH6WYVGRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBiYZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmI2NTBjOTI5LTA5ZGUtNDliZS1hN2Q5LTdkNGZkNzUzNjhiYi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmUzNWRiNjQxLTI1OGUtNGI1Ni1iZTdlLTNmMjcxYTJiYjI5M3JjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCBP/If6aHRW4VfY7IsXrEaCf5h3Fd0dwP7PH6sqLy+hDaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg9S2zbXgYBz8ipI5x5X+iZ4r1Qj7V/nHbT+0MkUYetdyiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggPAEkpKqgzZjL1PfqyljsV5bH/Ou1VAR3zE3+/hgA32R0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQEFcH8gWMmpbCTAfR8+m2f+0an4uGHducylBSJ0hSWFNAr9StbpQI6KzZxgoijMeiK6IwIP90OFIHVpqEwEUkd4=</c2pa:manifest></metadata>
+<defs>
+  <style>
+    .project-card { cursor: pointer; }
+    .project-card .cardBorderCyan, .project-card .cardBorderPurple { transition: filter 0.25s ease, stroke-width 0.25s ease; }
+    .project-card:hover .cardBorderCyan { stroke-width: 2.6; filter: url(#glowCyanStrong); }
+    .project-card:hover .cardBorderPurple { stroke-width: 2.6; filter: url(#glowPurpleStrong); }
 
-  <defs>
+    .sweepBarCyan, .sweepBarPurple { animation-play-state: paused; }
+    .project-card:hover .sweepBarCyan { animation: sweepDown 1.7s linear infinite; animation-play-state: running; }
+    .project-card:hover .sweepBarPurple { animation: sweepDown 1.7s linear infinite; animation-play-state: running; }
+    @keyframes sweepDown { 0% { transform: translateY(0px); } 100% { transform: translateY(720px); } }
 
-    <!-- Background -->
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#020B18"/>
-      <stop offset="50%" stop-color="#06182B"/>
-      <stop offset="100%" stop-color="#05051B"/>
-    </linearGradient>
+    .workflow-node { transition: transform 0.22s ease; transform-box: fill-box; transform-origin: center; cursor: pointer; }
+    .workflow-node .nodeBorder { transition: filter 0.22s ease, stroke-width 0.22s ease; }
+    .workflow-node:hover { transform: translateY(-4px) scale(1.04); }
+    .workflow-node:hover .nodeBorder.cyanNode { stroke-width: 2.4; filter: url(#glowCyanStrong); }
+    .workflow-node:hover .nodeBorder.purpleNode { stroke-width: 2.4; filter: url(#glowPurpleStrong); }
 
-    <!-- Card gradients -->
-    <linearGradient id="cyanCard" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#071D30"/>
-      <stop offset="100%" stop-color="#03101F"/>
-    </linearGradient>
+    .tech-pill { transition: transform 0.2s ease; transform-box: fill-box; transform-origin: center; cursor: pointer; }
+    .tech-pill .pillBorder { transition: filter 0.2s ease, stroke-width 0.2s ease; }
+    .tech-pill:hover { transform: translateY(-3px) scale(1.03); }
+    .tech-pill:hover .pillBorder.cyanPill { stroke-width: 2; filter: url(#glowCyanStrong); }
+    .tech-pill:hover .pillBorder.purplePill { stroke-width: 2; filter: url(#glowPurpleStrong); }
 
-    <linearGradient id="purpleCard" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#170D2C"/>
-      <stop offset="100%" stop-color="#08051C"/>
-    </linearGradient>
+    .cta-button { transition: transform 0.25s ease; transform-box: fill-box; transform-origin: center; cursor: pointer; }
+    .cta-button .ctaBorder { transition: filter 0.25s ease, stroke-width 0.25s ease; }
+    .cta-button:hover { transform: translateY(-3px) scale(1.02); }
+    .cta-button:hover .ctaBorder.cyanCta { stroke-width: 2.4; filter: url(#glowCyanStrong); }
+    .cta-button:hover .ctaBorder.purpleCta { stroke-width: 2.4; filter: url(#glowPurpleStrong); }
 
-    <!-- Cyan -->
-    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#00F2FF"/>
-      <stop offset="100%" stop-color="#008CFF"/>
-    </linearGradient>
+    text { font-family: Arial, Helvetica, sans-serif; }
+  </style>
 
-    <!-- Purple -->
-    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#D66BFF"/>
-      <stop offset="100%" stop-color="#7447FF"/>
-    </linearGradient>
+  <radialGradient id="bgGlowCyan" cx="25%" cy="10%" r="55%">
+    <stop offset="0%" stop-color="#0ea5c9" stop-opacity="0.22"/>
+    <stop offset="100%" stop-color="#0ea5c9" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="bgGlowPurple" cx="80%" cy="15%" r="55%">
+    <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.20"/>
+    <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="bgGlowCenter" cx="50%" cy="60%" r="60%">
+    <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.18"/>
+    <stop offset="100%" stop-color="#1e3a8a" stop-opacity="0"/>
+  </radialGradient>
 
-    <!-- Soft glow -->
-    <filter id="glowCyan" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="7" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+  <linearGradient id="headingGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#22d3ee"/>
+    <stop offset="55%" stop-color="#3b82f6"/>
+    <stop offset="100%" stop-color="#a855f7"/>
+  </linearGradient>
 
-    <filter id="glowPurple" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="7" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+  <linearGradient id="cardCyanFill" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0b1a2e" stop-opacity="0.95"/>
+    <stop offset="100%" stop-color="#071120" stop-opacity="0.97"/>
+  </linearGradient>
+  <linearGradient id="cardPurpleFill" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#170f2e" stop-opacity="0.95"/>
+    <stop offset="100%" stop-color="#0f0a1f" stop-opacity="0.97"/>
+  </linearGradient>
 
-    <!-- Hover effects -->
-    <style>
-      .cyanHover {
-        transition: all .25s ease;
-        cursor: pointer;
-      }
+  <linearGradient id="ctaCyanFill" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#0e2a3d"/>
+    <stop offset="100%" stop-color="#0a3a4a"/>
+  </linearGradient>
+  <linearGradient id="ctaPurpleFill" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#241640"/>
+    <stop offset="100%" stop-color="#301a4d"/>
+  </linearGradient>
 
-      .cyanHover:hover {
-        filter: url(#glowCyan);
-        transform: translateY(-5px);
-      }
+  <linearGradient id="sweepGradCyan" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#67e8f9" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#67e8f9" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#67e8f9" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="sweepGradPurple" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#d8b4fe" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#d8b4fe" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#d8b4fe" stop-opacity="0"/>
+  </linearGradient>
 
-      .purpleHover {
-        transition: all .25s ease;
-        cursor: pointer;
-      }
+  <linearGradient id="makeBar1" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#ff4fe0"/>
+    <stop offset="100%" stop-color="#d626c9"/>
+  </linearGradient>
+  <linearGradient id="makeBar2" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#b040f0"/>
+    <stop offset="100%" stop-color="#8b2fd6"/>
+  </linearGradient>
+  <linearGradient id="makeBar3" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#7c3aed"/>
+    <stop offset="100%" stop-color="#5b21b6"/>
+  </linearGradient>
 
-      .purpleHover:hover {
-        filter: url(#glowPurple);
-        transform: translateY(-5px);
-      }
+  <linearGradient id="gmailLeftV" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#f6899e"/>
+    <stop offset="100%" stop-color="#ea4335"/>
+  </linearGradient>
+  <linearGradient id="gmailLeftD" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#ea4335"/>
+    <stop offset="100%" stop-color="#fbbc05"/>
+  </linearGradient>
+  <linearGradient id="gmailRightD" x1="100%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#34a853"/>
+    <stop offset="100%" stop-color="#34a853"/>
+  </linearGradient>
+  <linearGradient id="gmailRightV" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#34a853"/>
+    <stop offset="100%" stop-color="#4285f4"/>
+  </linearGradient>
 
-      .node {
-        transition: all .22s ease;
-      }
+  <filter id="glowCyanStrong" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="10" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glowPurpleStrong" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="10" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
 
-      .node:hover {
-        filter: url(#glowCyan);
-        transform: translateY(-4px);
-      }
+  <mask id="sweepMaskCyan" maskUnits="userSpaceOnUse" x="30" y="190" width="740" height="620">
+    <rect x="30" y="190" width="740" height="620" fill="black"/>
+    <rect x="50" y="210" width="700" height="580" rx="22" fill="none" stroke="white" stroke-width="5"/>
+  </mask>
+  <mask id="sweepMaskPurple" maskUnits="userSpaceOnUse" x="766" y="190" width="740" height="620">
+    <rect x="766" y="190" width="740" height="620" fill="black"/>
+    <rect x="786" y="210" width="700" height="580" rx="22" fill="none" stroke="white" stroke-width="5"/>
+  </mask>
+</defs>
 
-      .purpleNode:hover {
-        filter: url(#glowPurple);
-        transform: translateY(-4px);
-      }
+<g transform="scale(0.875)">
 
-      .button:hover {
-        filter: url(#glowCyan);
-      }
+<!-- BACKGROUND -->
+<rect width="1536" height="1024" fill="#050b16"/>
+<rect width="1536" height="1024" fill="url(#bgGlowCyan)"/>
+<rect width="1536" height="1024" fill="url(#bgGlowPurple)"/>
+<rect width="1536" height="1024" fill="url(#bgGlowCenter)"/>
 
-      .purpleButton:hover {
-        filter: url(#glowPurple);
-      }
-    </style>
+<path d="M -50 260 C 300 200, 650 340, 1000 250 C 1250 190, 1450 260, 1586 220" stroke="#1c3a5e" stroke-width="1.5" fill="none" opacity="0.35"/>
+<path d="M -50 650 C 250 600, 500 720, 780 660 C 1050 600, 1300 700, 1586 640" stroke="#3a1c5e" stroke-width="1.5" fill="none" opacity="0.3"/>
+<path d="M -50 980 C 300 940, 650 1000, 1000 950 C 1250 910, 1450 960, 1586 930" stroke="#1c3a5e" stroke-width="1.2" fill="none" opacity="0.25"/>
 
-    <!-- Decorative background -->
-    <radialGradient id="orbBlue">
-      <stop offset="0%" stop-color="#008CFF" stop-opacity=".20"/>
-      <stop offset="100%" stop-color="#008CFF" stop-opacity="0"/>
-    </radialGradient>
+<circle cx="120" cy="480" r="1.6" fill="#7dd3fc" opacity="0.5"/>
+<circle cx="1420" cy="380" r="1.6" fill="#c4b5fd" opacity="0.5"/>
+<circle cx="980" cy="150" r="1.3" fill="#7dd3fc" opacity="0.4"/>
+<circle cx="1300" cy="900" r="1.4" fill="#c4b5fd" opacity="0.4"/>
+<circle cx="60" cy="900" r="1.3" fill="#7dd3fc" opacity="0.4"/>
+<circle cx="700" cy="60" r="1.2" fill="#c4b5fd" opacity="0.35"/>
 
-    <radialGradient id="orbPurple">
-      <stop offset="0%" stop-color="#8C4FFF" stop-opacity=".18"/>
-      <stop offset="100%" stop-color="#8C4FFF" stop-opacity="0"/>
-    </radialGradient>
+<!-- TOP LEFT CALLOUT -->
+<rect x="48" y="46" width="232" height="76" rx="16" fill="#06131f" fill-opacity="0.75" stroke="#22d3ee" stroke-width="1.2"/>
+<path d="M74 78 l4 -10 l4 10 l10 4 l-10 4 l-4 10 l-4 -10 l-10 -4 z" fill="#67e8f9"/>
+<text x="98" y="80" fill="#e6f7fb" font-size="17" font-weight="700">Practical Solutions</text>
+<text x="98" y="102" fill="#9fd8e8" font-size="17" font-weight="700">Real Results</text>
 
-  </defs>
+<!-- TOP RIGHT DECORATION -->
+<text x="1380" y="72" fill="#93c5fd" font-size="24" font-style="italic" font-family="Georgia, 'Segoe Script', cursive" text-anchor="middle" opacity="0.85">Ideas into</text>
+<text x="1410" y="104" fill="#93c5fd" font-size="24" font-style="italic" font-family="Georgia, 'Segoe Script', cursive" text-anchor="middle" opacity="0.85">Automation</text>
+<path d="M1345 118 C 1385 130, 1435 130, 1470 116" stroke="#60a5fa" stroke-width="1.3" fill="none" opacity="0.6"/>
 
+<!-- HEADING -->
+<text x="768" y="80" text-anchor="middle" font-size="46" font-weight="800" fill="#f5f9ff">
+  <tspan>🚀 Featured </tspan><tspan fill="url(#headingGrad)">Projects</tspan>
+</text>
+<text x="768" y="125" text-anchor="middle" font-size="20" fill="#7dd3fc">Real automation systems built with AI, workflows and APIs</text>
 
-  <!-- ====================================================== -->
-  <!-- BACKGROUND -->
-  <!-- ====================================================== -->
+<line x1="322" y1="158" x2="470" y2="158" stroke="#3b82f6" stroke-width="1" opacity="0.6"/>
+<text x="768" y="163" text-anchor="middle" font-size="14" letter-spacing="3" fill="#8fb8e6">AUTOMATE • BUILD • SOLVE • CREATE • IMPACT</text>
+<line x1="1066" y1="158" x2="1214" y2="158" stroke="#a855f7" stroke-width="1" opacity="0.6"/>
 
-  <rect width="1200" height="900" rx="30" fill="url(#bg)"/>
+<!-- ================= LEFT CARD (CYAN) ================= -->
+<g class="project-card">
+  <rect x="50" y="210" width="700" height="580" rx="22" fill="url(#cardCyanFill)"/>
+  <rect class="cardBorderCyan" x="50" y="210" width="700" height="580" rx="22" fill="none" stroke="#1a7d97" stroke-width="1.4"/>
+  <g mask="url(#sweepMaskCyan)">
+    <rect class="sweepBarCyan" x="30" y="70" width="740" height="140" fill="url(#sweepGradCyan)"/>
+  </g>
+  <path d="M60 720 C 220 690, 420 760, 700 710" stroke="#0ea5c9" stroke-width="1" fill="none" opacity="0.25"/>
 
-  <circle cx="120" cy="50" r="300" fill="url(#orbBlue)"/>
-  <circle cx="1080" cy="210" r="300" fill="url(#orbPurple)"/>
-  <circle cx="600" cy="850" r="250" fill="url(#orbBlue)"/>
+  <circle cx="140" cy="292" r="46" fill="#061826" stroke="#1a7d97" stroke-width="1.4"/>
+  <rect x="122" y="272" width="30" height="38" rx="3" fill="#3b82f6"/>
+  <rect x="128" y="280" width="18" height="3" rx="1.5" fill="#e6f7fb"/>
+  <rect x="128" y="288" width="18" height="3" rx="1.5" fill="#e6f7fb"/>
+  <rect x="128" y="296" width="12" height="3" rx="1.5" fill="#e6f7fb"/>
 
-  <!-- Decorative curves -->
-  <path d="M0 760 C250 690 350 820 560 750 S900 680 1200 760"
-        fill="none"
-        stroke="#0877C9"
-        stroke-opacity=".18"
-        stroke-width="2"/>
+  <text x="208" y="282" font-size="32" font-weight="800" fill="#f2f8fc">Business Quotation</text>
+  <text x="208" y="318" font-size="32" font-weight="800" fill="#22d3ee">Automation</text>
 
-  <path d="M0 780 C250 710 380 840 600 770 S950 700 1200 780"
-        fill="none"
-        stroke="#714BFF"
-        stroke-opacity=".13"
-        stroke-width="2"/>
+  <rect x="608" y="240" width="112" height="34" rx="17" fill="#06202b" stroke="#22d3ee" stroke-width="1"/>
+  <text x="664" y="262" text-anchor="middle" font-size="14" fill="#a5f3fc">♛ Featured</text>
 
+  <text x="90" y="378" font-size="18" fill="#c9dbe8">Automated quotation generation from form submission to delivery.</text>
 
-  <!-- ====================================================== -->
-  <!-- TOP LEFT LABEL -->
-  <!-- ====================================================== -->
+  <!-- workflow -->
+  <g class="workflow-node">
+    <rect class="nodeBorder cyanNode" x="90" y="410" width="128" height="100" rx="14" fill="#061826" stroke="#1a7d97" stroke-width="1.4"/>
+    <rect x="130" y="432" width="24" height="28" rx="3" fill="#7c5cff"/>
+    <rect x="135" y="438" width="14" height="2.5" fill="#eef2ff"/>
+    <rect x="135" y="444" width="14" height="2.5" fill="#eef2ff"/>
+    <rect x="135" y="450" width="9" height="2.5" fill="#eef2ff"/>
+    <text x="154" y="497" text-anchor="middle" font-size="15" fill="#e6f7fb" font-weight="600">Google Forms</text>
+  </g>
+  <text x="232" y="468" font-size="22" fill="#38bdf8">→</text>
 
-  <rect x="38" y="38" width="205" height="72" rx="16"
-        fill="#071D30"
-        stroke="#00D9FF"
-        stroke-opacity=".55"
-        stroke-width="1.5"/>
-
-  <text x="65" y="69"
-        fill="#00E8FF"
-        font-size="23"
-        font-family="Arial, sans-serif">✦</text>
-
-  <text x="94" y="66"
-        fill="#E8F7FF"
-        font-size="17"
-        font-family="Arial, sans-serif">Practical Solutions</text>
-
-  <text x="94" y="91"
-        fill="#B7DFFF"
-        font-size="17"
-        font-family="Arial, sans-serif">Real Results</text>
-
-
-  <!-- ====================================================== -->
-  <!-- TITLE -->
-  <!-- ====================================================== -->
-
-  <text x="600" y="74"
-        text-anchor="middle"
-        fill="#F5FAFF"
-        font-size="45"
-        font-weight="700"
-        font-family="Arial, sans-serif">
-    🚀 Featured <tspan fill="#00E8FF">Projects</tspan>
-  </text>
-
-  <text x="600" y="112"
-        text-anchor="middle"
-        fill="#8BD8FF"
-        font-size="20"
-        font-family="Arial, sans-serif">
-    Real automation systems built with AI, workflows and APIs
-  </text>
-
-  <line x1="250" y1="142" x2="420" y2="142"
-        stroke="#00E8FF" stroke-width="2"/>
-
-  <text x="600" y="148"
-        text-anchor="middle"
-        fill="#A9DFFF"
-        font-size="13"
-        letter-spacing="7"
-        font-family="Arial, sans-serif">
-    AUTOMATE • BUILD • SOLVE • CREATE • IMPACT
-  </text>
-
-  <line x1="780" y1="142" x2="950" y2="142"
-        stroke="#9270FF" stroke-width="2"/>
-
-
-  <!-- ====================================================== -->
-  <!-- LEFT PROJECT CARD -->
-  <!-- ====================================================== -->
-
-  <g class="cyanHover">
-
-    <rect x="40" y="185" width="545" height="470"
-          rx="27"
-          fill="url(#cyanCard)"
-          stroke="#00DFFF"
-          stroke-width="2"/>
-
-    <rect x="42" y="187" width="541" height="466"
-          rx="25"
-          fill="none"
-          stroke="#00AFFF"
-          stroke-opacity=".22"
-          stroke-width="8"/>
-
-    <!-- Icon circle -->
-    <circle cx="115" cy="255" r="53"
-            fill="#071B2E"
-            stroke="#00E8FF"
-            stroke-width="3"/>
-
-    <!-- Google Forms icon -->
-    <g transform="translate(88 228)">
-      <path d="M7 0h29l13 13v46H7z"
-            fill="#673AB7"/>
-      <path d="M36 0v14h13"
-            fill="#A98CFF"/>
-      <rect x="15" y="25" width="24" height="4" rx="2" fill="white"/>
-      <rect x="15" y="34" width="24" height="4" rx="2" fill="white"/>
-      <rect x="15" y="43" width="17" height="4" rx="2" fill="white"/>
+  <g class="workflow-node">
+    <rect class="nodeBorder cyanNode" x="254" y="410" width="128" height="100" rx="14" fill="#061826" stroke="#2c5a7a" stroke-width="1.2"/>
+    <g transform="translate(300,428)">
+      <rect x="0" y="0" width="7" height="34" rx="3" fill="url(#makeBar1)" transform="rotate(-16 3.5 17)"/>
+      <rect x="11" y="2" width="7" height="30" rx="3" fill="url(#makeBar2)" transform="rotate(-7 14.5 17)"/>
+      <rect x="22" y="4" width="7" height="26" rx="3" fill="url(#makeBar3)"/>
     </g>
+    <text x="318" y="497" text-anchor="middle" font-size="15" fill="#e6f7fb" font-weight="600">Make.com</text>
+  </g>
+  <text x="396" y="468" font-size="22" fill="#38bdf8">→</text>
 
-    <!-- Title -->
-    <text x="183" y="252"
-          fill="#F4FAFF"
-          font-size="31"
-          font-weight="700"
-          font-family="Arial, sans-serif">
-      Business Quotation
-    </text>
+  <g class="workflow-node">
+    <rect class="nodeBorder cyanNode" x="418" y="410" width="128" height="100" rx="14" fill="#061826" stroke="#2c5a7a" stroke-width="1.2"/>
+    <rect x="462" y="432" width="24" height="28" rx="3" fill="#ef4444"/>
+    <text x="474" y="452" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">PDF</text>
+    <text x="482" y="497" text-anchor="middle" font-size="15" fill="#e6f7fb" font-weight="600">PDF Generation</text>
+  </g>
+  <text x="560" y="468" font-size="22" fill="#38bdf8">→</text>
 
-    <text x="183" y="284"
-          fill="#00E8FF"
-          font-size="27"
-          font-weight="700"
-          font-family="Arial, sans-serif">
-      Automation
-    </text>
-
-    <!-- Featured badge -->
-    <rect x="452" y="218" width="105" height="39"
-          rx="20"
-          fill="#06263B"
-          stroke="#00DFFF"/>
-
-    <text x="504" y="243"
-          text-anchor="middle"
-          fill="#DDFBFF"
-          font-size="15"
-          font-family="Arial, sans-serif">
-      ♛ Featured
-    </text>
-
-    <!-- Description -->
-    <text x="72" y="351"
-          fill="#E6F7FF"
-          font-size="17"
-          font-family="Arial, sans-serif">
-      Automated quotation generation from form submission to delivery.
-    </text>
-
-
-    <!-- ================= FLOW ================= -->
-
-    <!-- Google Forms -->
-    <g class="node">
-      <rect x="72" y="383" width="125" height="88"
-            rx="17"
-            fill="#081F32"
-            stroke="#00E8FF"
-            stroke-width="1.5"/>
-
-      <path d="M112 400h35l13 13v37h-48z"
-            fill="#673AB7"/>
-
-      <path d="M147 400v14h13"
-            fill="#A98CFF"/>
-
-      <rect x="120" y="423" width="28" height="4" fill="white"/>
-      <rect x="120" y="432" width="28" height="4" fill="white"/>
-      <rect x="120" y="441" width="19" height="4" fill="white"/>
-
-      <text x="134" y="460"
-            text-anchor="middle"
-            fill="#EAFBFF"
-            font-size="13"
-            font-weight="700"
-            font-family="Arial, sans-serif">
-        Google Forms
-      </text>
+  <g class="workflow-node">
+    <rect class="nodeBorder cyanNode" x="582" y="410" width="128" height="100" rx="14" fill="#061826" stroke="#2c5a7a" stroke-width="1.2"/>
+    <g transform="translate(626,432)">
+      <line x1="4" y1="2" x2="4" y2="24" stroke="url(#gmailLeftV)" stroke-width="7" stroke-linecap="round"/>
+      <line x1="4" y1="2" x2="16" y2="15" stroke="url(#gmailLeftD)" stroke-width="7" stroke-linecap="round"/>
+      <line x1="28" y1="2" x2="16" y2="15" stroke="url(#gmailRightD)" stroke-width="7" stroke-linecap="round"/>
+      <line x1="28" y1="2" x2="28" y2="24" stroke="url(#gmailRightV)" stroke-width="7" stroke-linecap="round"/>
     </g>
-
-
-    <!-- Arrow -->
-    <text x="218" y="434"
-          fill="#00E8FF"
-          font-size="34"
-          font-family="Arial, sans-serif">→</text>
-
-
-    <!-- Make -->
-    <g class="node">
-      <rect x="235" y="383" width="125" height="88"
-            rx="17"
-            fill="#081F32"
-            stroke="#287EAA"
-            stroke-width="1.5"/>
-
-      <!-- Make logo -->
-      <g transform="translate(270 407)">
-        <path d="M0 31L12 0h12L12 31z" fill="#6D00CC"/>
-        <path d="M17 31L29 0h12L29 31z" fill="#7D13E6"/>
-        <path d="M34 31L46 0h12L46 31z" fill="#5200A8"/>
-      </g>
-
-      <text x="297" y="459"
-            text-anchor="middle"
-            fill="#EAFBFF"
-            font-size="14"
-            font-weight="700"
-            font-family="Arial, sans-serif">
-        Make.com
-      </text>
-    </g>
-
-
-    <text x="377" y="434"
-          fill="#00E8FF"
-          font-size="34"
-          font-family="Arial, sans-serif">→</text>
-
-
-    <!-- PDF -->
-    <g class="node">
-      <rect x="395" y="383" width="125" height="88"
-            rx="17"
-            fill="#081F32"
-            stroke="#287EAA"
-            stroke-width="1.5"/>
-
-      <path d="M432 399h34l15 15v43h-49z"
-            fill="#F04438"/>
-
-      <path d="M466 399v16h15"
-            fill="#FF8076"/>
-
-      <text x="456" y="443"
-            text-anchor="middle"
-            fill="white"
-            font-size="18"
-            font-weight="700"
-            font-family="Arial, sans-serif">
-        PDF
-      </text>
-
-      <text x="457" y="459"
-            text-anchor="middle"
-            fill="#EAFBFF"
-            font-size="13"
-            font-weight="700"
-            font-family="Arial, sans-serif">
-        PDF Generation
-      </text>
-    </g>
-
-
-    <!-- Explanation -->
-    <rect x="70" y="492" width="245" height="65"
-          rx="16"
-          fill="#06263B"
-          stroke="#00DFFF"
-          stroke-opacity=".75"/>
-
-    <text x="91" y="520"
-          fill="#EAFBFF"
-          font-size="16"
-          font-family="Arial, sans-serif">
-      Collect client requirements
-    </text>
-
-    <text x="91" y="543"
-          fill="#EAFBFF"
-          font-size="16"
-          font-family="Arial, sans-serif">
-      through a simple form
-    </text>
-
-
-    <!-- Tech pills -->
-    <rect x="72" y="575" width="120" height="38"
-          rx="19" fill="#08283D" stroke="#00BFEA"/>
-
-    <text x="132" y="599"
-          text-anchor="middle"
-          fill="#DDFBFF"
-          font-size="14"
-          font-family="Arial, sans-serif">Make.com</text>
-
-    <rect x="201" y="575" width="170" height="38"
-          rx="19" fill="#08283D" stroke="#00BFEA"/>
-
-    <text x="286" y="599"
-          text-anchor="middle"
-          fill="#DDFBFF"
-          font-size="14"
-          font-family="Arial, sans-serif">Google Workspace</text>
-
-    <rect x="380" y="575" width="140" height="38"
-          rx="19" fill="#08283D" stroke="#00BFEA"/>
-
-    <text x="450" y="599"
-          text-anchor="middle"
-          fill="#DDFBFF"
-          font-size="14"
-          font-family="Arial, sans-serif">PDF Automation</text>
-
-
-    <!-- Explore button -->
-    <a href="https://github.com/autopromptaiwork-dev/business-quotation-automation"
-       target="_blank">
-
-      <g class="button">
-
-        <rect x="68" y="620" width="300" height="49"
-              rx="25"
-              fill="#062A40"
-              stroke="#00E8FF"
-              stroke-width="2"/>
-
-        <text x="218" y="651"
-              text-anchor="middle"
-              fill="#F4FFFF"
-              font-size="18"
-              font-weight="700"
-              font-family="Arial, sans-serif">
-          EXPLORE PROJECT →
-        </text>
-
-      </g>
-
-    </a>
-
-
-    <!-- Metric -->
-    <rect x="400" y="620" width="160" height="49"
-          rx="15"
-          fill="#08283D"
-          stroke="#137EA7"/>
-
-    <text x="420" y="650"
-          fill="#00E8FF"
-          font-size="23"
-          font-weight="700"
-          font-family="Arial, sans-serif">
-      100%
-    </text>
-
-    <text x="486" y="650"
-          fill="#BFEFFF"
-          font-size="12"
-          font-family="Arial, sans-serif">
-      Automated
-    </text>
-
+    <text x="646" y="497" text-anchor="middle" font-size="15" fill="#e6f7fb" font-weight="600">Send via Gmail</text>
   </g>
 
+  <rect x="90" y="530" width="290" height="58" rx="12" fill="#06131f" stroke="#22d3ee" stroke-width="1" opacity="0.9"/>
+  <text x="106" y="552" font-size="14" fill="#dbeeff">Collect client requirements</text>
+  <text x="106" y="572" font-size="14" fill="#dbeeff">through a simple form</text>
 
-
-  <!-- ====================================================== -->
-  <!-- RIGHT PROJECT CARD -->
-  <!-- ====================================================== -->
-
-  <g class="purpleHover">
-
-    <rect x="615" y="185" width="545" height="470"
-          rx="27"
-          fill="url(#purpleCard)"
-          stroke="#A855FF"
-          stroke-width="2"/>
-
-    <rect x="617" y="187" width="541" height="466"
-          rx="25"
-          fill="none"
-          stroke="#8C45FF"
-          stroke-opacity=".22"
-          stroke-width="8"/>
-
-
-    <!-- Robot icon -->
-    <circle cx="690" cy="255" r="53"
-            fill="#120D2A"
-            stroke="#C06CFF"
-            stroke-width="3"/>
-
-    <g transform="translate(660 226)">
-      <rect x="5" y="15" width="60" height="48"
-            rx="14"
-            fill="#EDEBFF"
-            stroke="#B36AFF"
-            stroke-width="3"/>
-
-      <rect x="17" y="27" width="36" height="20"
-            rx="8"
-            fill="#17102F"/>
-
-      <circle cx="28" cy="37" r="4" fill="#00E8FF"/>
-      <circle cx="43" cy="37" r="4" fill="#00E8FF"/>
-
-      <line x1="35" y1="15" x2="35" y2="5"
-            stroke="#C06CFF"
-            stroke-width="3"/>
-
-      <circle cx="35" cy="3" r="4"
-              fill="#00E8FF"/>
-
-      <line x1="5" y1="29" x2="-5" y2="21"
-            stroke="#C06CFF"
-            stroke-width="3"/>
-
-      <line x1="65" y1="29" x2="75" y2="21"
-            stroke="#C06CFF"
-            stroke-width="3"/>
+  <g class="tech-pill">
+    <rect class="pillBorder cyanPill" x="90" y="618" width="164" height="42" rx="21" fill="#06131f" stroke="#1a7d97" stroke-width="1.2"/>
+    <g transform="translate(108,626)">
+      <rect x="0" y="0" width="4.5" height="20" rx="2" fill="url(#makeBar1)" transform="rotate(-16 2.2 10)"/>
+      <rect x="7" y="1" width="4.5" height="18" rx="2" fill="url(#makeBar2)" transform="rotate(-7 9.2 10)"/>
+      <rect x="14" y="2" width="4.5" height="16" rx="2" fill="url(#makeBar3)"/>
     </g>
-
-
-    <!-- Title -->
-    <text x="758" y="252"
-          fill="#F8F3FF"
-          font-size="31"
-          font-weight="700"
-          font-family="Arial, sans-serif">
-      AI LeadGen
-    </text>
-
-    <text x="758" y="284"
-          fill="#C06CFF"
-          font-size="27"
-          font-weight="700"
-          font-family="Arial, sans-serif">
-      Automation
-    </text>
-
-
-    <!-- Featured -->
-    <rect x="1028" y="218" width="105" height="39"
-          rx="20"
-          fill="#1B1037"
-          stroke="#B25CFF"/>
-
-    <text x="1080" y="243"
-          text-anchor="middle"
-          fill="#F5EFFF"
-          font-size="15"
-          font-family="Arial, sans-serif">
-      ♛ Featured
-    </text>
-
-
-    <!-- Description -->
-    <text x="647" y="351"
-          fill="#F0E9FF"
-          font-size="17"
-          font-family="Arial, sans-serif">
-      AI-powered lead generation with automated data processing.
-    </text>
-
-
-    <!-- ================= FLOW ================= -->
-
-    <!-- Business Data -->
-    <g class="purpleNode">
-      <rect x="647" y="383" width="125" height="88"
-            rx="17"
-            fill="#130D2C"
-            stroke="#794BC5"/>
-
-      <!-- location icon -->
-      <path d="M709 405
-               C691 405 681 419 681 434
-               C681 452 709 462 709 462
-               C709 462 737 452 737 434
-               C737 419 727 405 709 405Z"
-            fill="#C06CFF"/>
-
-      <circle cx="709" cy="432" r="8"
-              fill="#1A0E38"/>
-
-      <text x="709" y="460"
-            text-anchor="middle"
-            fill="#F0E9FF"
-            font-size="13"
-            font-weight="700"
-            font-family="Arial, sans-serif">
-        Business Data
-      </text>
-    </g>
-
-
-    <text x="790" y="434"
-          fill="#B36AFF"
-          font-size="34"
-          font-family="Arial, sans-serif">→</text>
-
-
-    <!-- n8n + Gemini -->
-    <g class="purpleNode">
-      <rect x="810" y="383" width="125" height="88"
-            rx="17"
-            fill="#130D2C"
-            stroke="#B36AFF"
-            stroke-width="1.5"/>
-
-      <!-- n8n logo -->
-      <g transform="translate(837 408)">
-        <circle cx="7" cy="16" r="6" fill="#EA4B71"/>
-        <circle cx="39" cy="5" r="6" fill="#EA4B71"/>
-        <circle cx="39" cy="28" r="6" fill="#EA4B71"/>
-        <line x1="13" y1="14" x2="33" y2="7"
-              stroke="#EA4B71" stroke-width="3"/>
-        <line x1="13" y1="18" x2="33" y2="26"
-              stroke="#EA4B71" stroke-width="3"/>
-      </g>
-
-      <text x="872" y="460"
-            text-anchor="middle"
-            fill="#F0E9FF"
-            font-size="13"
-            font-weight="700"
-            font-family="Arial, sans-serif">
-        n8n + Gemini
-      </text>
-    </g>
-
-
-    <text x="952" y="434"
-          fill="#B36AFF"
-          font-size="34"
-          font-family="Arial, sans-serif">→</text>
-
-
-    <!-- Clean Leads -->
-    <g class="purpleNode">
-
-      <rect x="970" y="383" width="125" height="88"
-            rx="17"
-            fill="#130D2C"
-            stroke="#794BC5"/>
-
-      <!-- document -->
-      <path d="M1005 402h34l10 10v39h-44z"
-            fill="#B36AFF"/>
-
-      <path d="M1039 402v11h10"
-            fill="#E0B8FF"/>
-
-      <rect x="1013" y="422" width="22" height="4"
-            fill="#25123F"/>
-
-      <rect x="1013" y="431" width="27" height="4"
-            fill="#25123F"/>
-
-      <rect x="1013" y="440" width="19" height="4"
-            fill="#25123F"/>
-
-      <text x="1032" y="460"
-            text-anchor="middle"
-            fill="#F0E9FF"
-            font-size="13"
-            font-weight="700"
-            font-family="Arial, sans-serif">
-        Clean Leads
-      </text>
-
-    </g>
-
-
-    <!-- Explanation -->
-    <rect x="790" y="492" width="230" height="65"
-          rx="16"
-          fill="#1A1037"
-          stroke="#B36AFF"/>
-
-    <text x="811" y="520"
-          fill="#F4EFFF"
-          font-size="16"
-          font-family="Arial, sans-serif">
-      Process and enrich data
-    </text>
-
-    <text x="811" y="543"
-          fill="#F4EFFF"
-          font-size="16"
-          font-family="Arial, sans-serif">
-      with AI
-    </text>
-
-
-    <!-- Tech pills -->
-    <rect x="647" y="575" width="110" height="38"
-          rx="19" fill="#180F34" stroke="#9D50FF"/>
-
-    <!-- n8n mini -->
-    <circle cx="673" cy="594" r="6" fill="#EA4B71"/>
-    <circle cx="697" cy="587" r="5" fill="#EA4B71"/>
-    <circle cx="697" cy="601" r="5" fill="#EA4B71"/>
-
-    <text x="721" y="599"
-          text-anchor="middle"
-          fill="#F2E9FF"
-          font-size="14"
-          font-family="Arial, sans-serif">
-      n8n
-    </text>
-
-
-    <rect x="768" y="575" width="125" height="38"
-          rx="19" fill="#180F34" stroke="#9D50FF"/>
-
-    <!-- Gemini sparkle -->
-    <path d="M795 582
-             C800 592 806 597 816 600
-             C806 603 800 608 795 618
-             C790 608 784 603 774 600
-             C784 597 790 592 795 582Z"
-          fill="#C18AFF"/>
-
-    <text x="848" y="599"
-          text-anchor="middle"
-          fill="#F2E9FF"
-          font-size="14"
-          font-family="Arial, sans-serif">
-      Gemini
-    </text>
-
-
-    <rect x="904" y="575" width="145" height="38"
-          rx="19" fill="#180F34" stroke="#9D50FF"/>
-
-    <!-- database -->
-    <ellipse cx="929" cy="587" rx="9" ry="5"
-             fill="#B46CFF"/>
-    <path d="M920 587v13c0 3 4 5 9 5s9-2 9-5v-13"
-          fill="#8D4DE5"/>
-
-    <text x="988" y="599"
-          text-anchor="middle"
-          fill="#F2E9FF"
-          font-size="14"
-          font-family="Arial, sans-serif">
-      Bright Data
-    </text>
-
-
-    <!-- Explore -->
-    <a href="https://github.com/autopromptaiwork-dev/ai-leadgen-automation"
-       target="_blank">
-
-      <g class="purpleButton">
-
-        <rect x="642" y="620" width="300" height="49"
-              rx="25"
-              fill="#1B1039"
-              stroke="#B35DFF"
-              stroke-width="2"/>
-
-        <text x="792" y="651"
-              text-anchor="middle"
-              fill="#FFF8FF"
-              font-size="18"
-              font-weight="700"
-              font-family="Arial, sans-serif">
-          EXPLORE PROJECT →
-        </text>
-
-      </g>
-
-    </a>
-
-
-    <!-- Metric -->
-    <rect x="975" y="620" width="160" height="49"
-          rx="15"
-          fill="#1A1037"
-          stroke="#7F49C7"/>
-
-    <text x="995" y="650"
-          fill="#C06CFF"
-          font-size="23"
-          font-weight="700"
-          font-family="Arial, sans-serif">
-      10x
-    </text>
-
-    <text x="1048" y="650"
-          fill="#E0CFFF"
-          font-size="12"
-          font-family="Arial, sans-serif">
-      Faster Research
-    </text>
-
+    <text x="150" y="644" font-size="14" fill="#e6f7fb">Make.com</text>
+  </g>
+  <g class="tech-pill">
+    <rect class="pillBorder cyanPill" x="270" y="618" width="196" height="42" rx="21" fill="#06131f" stroke="#1a7d97" stroke-width="1.2"/>
+    <circle cx="292" cy="639" r="8" fill="#4285f4"/>
+    <text x="310" y="644" font-size="14" fill="#e6f7fb">Google Workspace</text>
+  </g>
+  <g class="tech-pill">
+    <rect class="pillBorder cyanPill" x="482" y="618" width="176" height="42" rx="21" fill="#06131f" stroke="#1a7d97" stroke-width="1.2"/>
+    <rect x="502" y="629" width="16" height="20" rx="2" fill="#ef4444"/>
+    <text x="530" y="644" font-size="14" fill="#e6f7fb">PDF Automation</text>
   </g>
 
+  <g class="cta-button">
+    <rect class="ctaBorder cyanCta" x="90" y="700" width="320" height="60" rx="30" fill="url(#ctaCyanFill)" stroke="#22d3ee" stroke-width="1.4"/>
+    <text x="250" y="737" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff" letter-spacing="1">EXPLORE PROJECT →</text>
+  </g>
 
+  <rect x="450" y="700" width="250" height="60" rx="14" fill="#06131f" stroke="#22d3ee" stroke-width="1" opacity="0.9"/>
+  <rect x="470" y="730" width="6" height="14" fill="#22d3ee"/>
+  <rect x="480" y="724" width="6" height="20" fill="#22d3ee"/>
+  <rect x="490" y="718" width="6" height="26" fill="#22d3ee"/>
+  <text x="510" y="726" font-size="20" font-weight="800" fill="#f2f8fc">100%</text>
+  <text x="510" y="744" font-size="12" fill="#9fd8e8">Automated Workflow</text>
+</g>
 
-  <!-- ====================================================== -->
-  <!-- BOTTOM HIGHLIGHTS -->
-  <!-- ====================================================== -->
+<!-- ================= RIGHT CARD (PURPLE) ================= -->
+<g class="project-card">
+  <rect x="786" y="210" width="700" height="580" rx="22" fill="url(#cardPurpleFill)"/>
+  <rect class="cardBorderPurple" x="786" y="210" width="700" height="580" rx="22" fill="none" stroke="#6b3fa0" stroke-width="1.4"/>
+  <g mask="url(#sweepMaskPurple)">
+    <rect class="sweepBarPurple" x="766" y="70" width="740" height="140" fill="url(#sweepGradPurple)"/>
+  </g>
+  <path d="M796 720 C 960 690, 1160 760, 1436 710" stroke="#7c3aed" stroke-width="1" fill="none" opacity="0.25"/>
 
-  <!-- Real Projects -->
-  <circle cx="78" cy="735" r="29"
-          fill="#071B32"
-          stroke="#667DFF"
-          stroke-width="1.5"/>
+  <circle cx="876" cy="292" r="46" fill="#150c26" stroke="#6b3fa0" stroke-width="1.4"/>
+  <rect x="858" y="278" width="36" height="28" rx="8" fill="#c084fc"/>
+  <circle cx="868" cy="290" r="3" fill="#150c26"/>
+  <circle cx="884" cy="290" r="3" fill="#150c26"/>
+  <line x1="876" y1="272" x2="876" y2="278" stroke="#c084fc" stroke-width="2"/>
+  <circle cx="876" cy="270" r="2.5" fill="#c084fc"/>
 
-  <text x="78" y="744"
-        text-anchor="middle"
-        fill="#00E8FF"
-        font-size="27"
-        font-family="Arial, sans-serif">
-    &lt;/&gt;
-  </text>
+  <text x="944" y="282" font-size="32" font-weight="800" fill="#f2f0fc">AI LeadGen</text>
+  <text x="944" y="318" font-size="32" font-weight="800" fill="#c084fc">Automation</text>
 
-  <text x="125" y="732"
-        fill="#F3F8FF"
-        font-size="19"
-        font-weight="700"
-        font-family="Arial, sans-serif">
-    Real Projects
-  </text>
+  <rect x="1344" y="240" width="112" height="34" rx="17" fill="#170f2e" stroke="#a855f7" stroke-width="1"/>
+  <text x="1400" y="262" text-anchor="middle" font-size="14" fill="#e9d5ff">♛ Featured</text>
 
-  <text x="125" y="758"
-        fill="#87CFFF"
-        font-size="15"
-        font-family="Arial, sans-serif">
-    Built and deployed
-  </text>
+  <text x="826" y="378" font-size="18" fill="#d8cdec">AI-powered lead generation with automated data processing.</text>
 
+  <g class="workflow-node">
+    <rect class="nodeBorder purpleNode" x="826" y="410" width="128" height="100" rx="14" fill="#150c26" stroke="#6b3fa0" stroke-width="1.2"/>
+    <circle cx="890" cy="446" r="10" fill="none" stroke="#c084fc" stroke-width="2"/>
+    <circle cx="890" cy="446" r="3" fill="#c084fc"/>
+    <text x="890" y="497" text-anchor="middle" font-size="15" fill="#f0e9fb" font-weight="600">Business Data</text>
+  </g>
+  <text x="968" y="468" font-size="22" fill="#c084fc">→</text>
 
-  <!-- Practical Impact -->
-  <circle cx="390" cy="735" r="29"
-          fill="#071B32"
-          stroke="#667DFF"
-          stroke-width="1.5"/>
+  <g class="workflow-node">
+    <rect class="nodeBorder purpleNode" x="990" y="410" width="140" height="100" rx="14" fill="#1c1030" stroke="#a855f7" stroke-width="1.6"/>
+    <circle cx="1042" cy="440" r="4" fill="#f472b6"/>
+    <circle cx="1058" cy="450" r="4" fill="#f472b6"/>
+    <circle cx="1042" cy="460" r="4" fill="#f472b6"/>
+    <line x1="1042" y1="440" x2="1058" y2="450" stroke="#f472b6" stroke-width="1.5"/>
+    <line x1="1058" y1="450" x2="1042" y2="460" stroke="#f472b6" stroke-width="1.5"/>
+    <text x="1060" y="497" text-anchor="middle" font-size="15" fill="#f0e9fb" font-weight="700">n8n + Gemini</text>
+  </g>
+  <text x="1140" y="468" font-size="22" fill="#c084fc">→</text>
 
-  <text x="390" y="745"
-        text-anchor="middle"
-        fill="#C39AFF"
-        font-size="28"
-        font-family="Arial, sans-serif">
-    ⚡
-  </text>
+  <g class="workflow-node">
+    <rect class="nodeBorder purpleNode" x="1162" y="410" width="128" height="100" rx="14" fill="#150c26" stroke="#6b3fa0" stroke-width="1.2"/>
+    <rect x="1210" y="432" width="24" height="28" rx="3" fill="#8b5cf6"/>
+    <rect x="1215" y="438" width="14" height="2.5" fill="#eef2ff"/>
+    <rect x="1215" y="444" width="14" height="2.5" fill="#eef2ff"/>
+    <text x="1226" y="497" text-anchor="middle" font-size="15" fill="#f0e9fb" font-weight="600">Clean Leads</text>
+  </g>
+  <text x="1304" y="468" font-size="22" fill="#c084fc">→</text>
 
-  <text x="438" y="732"
-        fill="#F3F8FF"
-        font-size="19"
-        font-weight="700"
-        font-family="Arial, sans-serif">
-    Practical Impact
-  </text>
+  <g class="workflow-node">
+    <rect class="nodeBorder purpleNode" x="1326" y="410" width="128" height="100" rx="14" fill="#150c26" stroke="#6b3fa0" stroke-width="1.2"/>
+    <rect x="1370" y="448" width="5" height="12" fill="#c084fc"/>
+    <rect x="1379" y="440" width="5" height="20" fill="#c084fc"/>
+    <rect x="1388" y="432" width="5" height="28" fill="#c084fc"/>
+    <text x="1390" y="497" text-anchor="middle" font-size="15" fill="#f0e9fb" font-weight="600">Ready to Use</text>
+  </g>
 
-  <text x="438" y="758"
-        fill="#87CFFF"
-        font-size="15"
-        font-family="Arial, sans-serif">
-    Solving real business problems
-  </text>
+  <rect x="826" y="530" width="290" height="58" rx="12" fill="#150c26" stroke="#a855f7" stroke-width="1" opacity="0.9"/>
+  <text x="842" y="552" font-size="14" fill="#ece3f8">Process and enrich data</text>
+  <text x="842" y="572" font-size="14" fill="#ece3f8">with AI</text>
 
+  <g class="tech-pill">
+    <rect class="pillBorder purplePill" x="826" y="618" width="108" height="42" rx="21" fill="#150c26" stroke="#6b3fa0" stroke-width="1.2"/>
+    <circle cx="846" cy="639" r="3" fill="#f472b6"/>
+    <circle cx="858" cy="633" r="3" fill="#f472b6"/>
+    <line x1="846" y1="639" x2="858" y2="633" stroke="#f472b6" stroke-width="1.3"/>
+    <text x="900" y="644" text-anchor="middle" font-size="14" fill="#f0e9fb">n8n</text>
+  </g>
+  <g class="tech-pill">
+    <rect class="pillBorder purplePill" x="948" y="618" width="130" height="42" rx="21" fill="#150c26" stroke="#6b3fa0" stroke-width="1.2"/>
+    <path d="M974 630 l3 9 l9 3 l-9 3 l-3 9 l-3 -9 l-9 -3 l9 -3 z" fill="#c084fc"/>
+    <text x="1020" y="644" text-anchor="middle" font-size="14" fill="#f0e9fb">Gemini</text>
+  </g>
+  <g class="tech-pill">
+    <rect class="pillBorder purplePill" x="1092" y="618" width="164" height="42" rx="21" fill="#150c26" stroke="#6b3fa0" stroke-width="1.2"/>
+    <rect x="1112" y="629" width="16" height="6" rx="3" fill="#8b5cf6"/>
+    <rect x="1112" y="637" width="16" height="6" rx="3" fill="#8b5cf6"/>
+    <rect x="1112" y="645" width="16" height="6" rx="3" fill="#8b5cf6"/>
+    <text x="1176" y="644" text-anchor="middle" font-size="14" fill="#f0e9fb">Bright Data</text>
+  </g>
 
-  <!-- Modern Tech Stack -->
-  <circle cx="730" cy="735" r="29"
-          fill="#071B32"
-          stroke="#667DFF"
-          stroke-width="1.5"/>
+  <g class="cta-button">
+    <rect class="ctaBorder purpleCta" x="826" y="700" width="320" height="60" rx="30" fill="url(#ctaPurpleFill)" stroke="#a855f7" stroke-width="1.4"/>
+    <text x="986" y="737" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff" letter-spacing="1">EXPLORE PROJECT →</text>
+  </g>
 
-  <text x="730" y="745"
-        text-anchor="middle"
-        fill="#C39AFF"
-        font-size="27"
-        font-family="Arial, sans-serif">
-    ◈
-  </text>
+  <rect x="1186" y="700" width="250" height="60" rx="14" fill="#150c26" stroke="#a855f7" stroke-width="1" opacity="0.9"/>
+  <rect x="1206" y="730" width="6" height="14" fill="#c084fc"/>
+  <rect x="1216" y="724" width="6" height="20" fill="#c084fc"/>
+  <rect x="1226" y="718" width="6" height="26" fill="#c084fc"/>
+  <text x="1246" y="726" font-size="20" font-weight="800" fill="#f2f0fc">10x</text>
+  <text x="1246" y="744" font-size="12" fill="#d8b4fe">Faster Lead Research</text>
+</g>
 
-  <text x="778" y="732"
-        fill="#F3F8FF"
-        font-size="19"
-        font-weight="700"
-        font-family="Arial, sans-serif">
-    Modern Tech Stack
-  </text>
+<!-- BOTTOM FEATURE ROW -->
+<g>
+  <circle cx="90" cy="908" r="26" fill="#06131f" stroke="#1a7d97" stroke-width="1.2"/>
+  <text x="90" y="915" text-anchor="middle" font-size="16" fill="#67e8f9" font-family="Consolas, monospace">&lt;/&gt;</text>
+  <text x="132" y="900" font-size="18" font-weight="800" fill="#f2f8fc">Real Projects</text>
+  <text x="132" y="922" font-size="14" fill="#9fb8cf">Built and deployed</text>
 
-  <text x="778" y="758"
-        fill="#87CFFF"
-        font-size="15"
-        font-family="Arial, sans-serif">
-    AI + Automation + APIs
-  </text>
+  <circle cx="390" cy="908" r="26" fill="#150c26" stroke="#6b3fa0" stroke-width="1.2"/>
+  <path d="M395 890 l-14 20 h10 l-4 14 l16 -22 h-10 z" fill="#c084fc"/>
+  <text x="432" y="900" font-size="18" font-weight="800" fill="#f2f0fc">Practical Impact</text>
+  <text x="432" y="922" font-size="14" fill="#b3aecb">Solving real business problems</text>
 
+  <circle cx="792" cy="908" r="26" fill="#0e1a30" stroke="#3671b0" stroke-width="1.2"/>
+  <rect x="782" y="898" width="20" height="6" rx="2" fill="#93c5fd"/>
+  <rect x="782" y="907" width="20" height="6" rx="2" fill="#93c5fd" opacity="0.75"/>
+  <rect x="782" y="916" width="20" height="6" rx="2" fill="#93c5fd" opacity="0.5"/>
+  <text x="834" y="900" font-size="18" font-weight="800" fill="#f2f8fc">Modern Tech Stack</text>
+  <text x="834" y="922" font-size="14" fill="#9fb8cf">AI + Automation + APIs</text>
 
-  <!-- Open Source -->
-  <circle cx="1050" cy="735" r="29"
-          fill="#071B32"
-          stroke="#667DFF"
-          stroke-width="1.5"/>
+  <circle cx="1140" cy="908" r="26" fill="#06131f" stroke="#3671b0" stroke-width="1.2"/>
+  <path d="M1140 892 c-9 0 -16 7 -16 16 c0 7 4.5 13 11 15 c0.8 0.2 1.1 -0.3 1.1 -0.8 v-3 c-4.5 1 -5.4 -2.1 -5.4 -2.1 c-0.7 -1.8 -1.8 -2.3 -1.8 -2.3 c-1.5 -1 0.1 -1 0.1 -1 c1.6 0.1 2.5 1.6 2.5 1.6 c1.5 2.5 3.8 1.8 4.8 1.4 c0.1 -1.1 0.6 -1.8 1 -2.2 c-3.6 -0.4 -7.4 -1.8 -7.4 -8 c0 -1.8 0.6 -3.2 1.6 -4.4 c-0.2 -0.4 -0.7 -2 0.2 -4.1 c0 0 1.3 -0.4 4.4 1.6 c1.3 -0.4 2.6 -0.5 4 -0.5 c1.4 0 2.7 0.2 4 0.5 c3.1 -2.1 4.4 -1.6 4.4 -1.6 c0.9 2.1 0.3 3.7 0.2 4.1 c1 1.1 1.6 2.6 1.6 4.4 c0 6.3 -3.8 7.6 -7.4 8 c0.6 0.5 1.1 1.5 1.1 3 v4.4 c0 0.4 0.3 0.9 1.1 0.8 c6.5 -2.2 11 -8.3 11 -15.4 c0 -9 -7 -16 -16 -16 z" fill="#93c5fd"/>
+  <text x="1182" y="900" font-size="18" font-weight="800" fill="#f2f8fc">Open Source</text>
+  <text x="1182" y="922" font-size="14" fill="#9fb8cf">Explore the code</text>
+</g>
 
-  <!-- GitHub mark -->
-  <circle cx="1050" cy="735" r="15"
-          fill="#F4F8FF"/>
+<!-- BOTTOM RIGHT DECORATION -->
+<text x="1420" y="868" text-anchor="middle" font-size="19" font-style="italic" font-family="Georgia, 'Segoe Script', cursive" fill="#93c5fd" opacity="0.85">Small</text>
+<text x="1420" y="896" text-anchor="middle" font-size="19" font-style="italic" font-family="Georgia, 'Segoe Script', cursive" fill="#93c5fd" opacity="0.85">Automations</text>
+<text x="1420" y="924" text-anchor="middle" font-size="19" font-style="italic" font-family="Georgia, 'Segoe Script', cursive" fill="#93c5fd" opacity="0.85">Big Possibilities</text>
+<line x1="1388" y1="936" x2="1452" y2="932" stroke="#60a5fa" stroke-width="1.2" opacity="0.6"/>
 
-  <circle cx="1045" cy="731" r="3" fill="#071B32"/>
-  <circle cx="1055" cy="731" r="3" fill="#071B32"/>
-  <path d="M1042 740 Q1050 747 1058 740"
-        fill="none"
-        stroke="#071B32"
-        stroke-width="2"/>
-
-  <text x="1095" y="732"
-        fill="#F3F8FF"
-        font-size="19"
-        font-weight="700"
-        font-family="Arial, sans-serif">
-    Open Source
-  </text>
-
-  <text x="1095" y="758"
-        fill="#87CFFF"
-        font-size="15"
-        font-family="Arial, sans-serif">
-    Explore the code
-  </text>
-
-
-  <!-- ====================================================== -->
-  <!-- FOOT DECORATION -->
-  <!-- ====================================================== -->
-
-  <text x="1085" y="825"
-        fill="#9B8CFF"
-        font-size="18"
-        font-style="italic"
-        font-family="cursive">
-    Small
-  </text>
-
-  <text x="1065" y="850"
-        fill="#9B8CFF"
-        font-size="18"
-        font-style="italic"
-        font-family="cursive">
-    Automations
-  </text>
-
-  <text x="1070" y="875"
-        fill="#9B8CFF"
-        font-size="18"
-        font-style="italic"
-        font-family="cursive">
-    Big Possibilities
-  </text>
-
+</g>
 </svg>
