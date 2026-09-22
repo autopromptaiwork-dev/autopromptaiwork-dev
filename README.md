@@ -84,4 +84,10 @@ My focus is on combining **AI, workflow automation, APIs, and business tools** t
 - 📄 Document & quotation automation
 - 🔄 Business process automation
 ---
+<br>
 
+## 🐍 GitHub Contributions
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/autopromptaiwork-dev/autopromptaiwork-dev/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake">
+</div>
