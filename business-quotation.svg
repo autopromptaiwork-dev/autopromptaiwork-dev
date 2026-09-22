@@ -1,0 +1,903 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="900"
+     height="720"
+     viewBox="0 0 900 720">
+
+  <defs>
+
+    <!-- =========================
+         BACKGROUND
+    ========================== -->
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#03101e"/>
+      <stop offset="50%" stop-color="#061a2b"/>
+      <stop offset="100%" stop-color="#020817"/>
+    </linearGradient>
+
+    <radialGradient id="cyanGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#00eaff" stop-opacity=".24"/>
+      <stop offset="55%" stop-color="#00bfff" stop-opacity=".08"/>
+      <stop offset="100%" stop-color="#00bfff" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="strongGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12"
+                    flood-color="#00dfff"
+                    flood-opacity=".25"/>
+    </filter>
+
+    <!-- =========================
+         CARD GRADIENT
+    ========================== -->
+
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#061c2e"/>
+      <stop offset="50%" stop-color="#041522"/>
+      <stop offset="100%" stop-color="#02101d"/>
+    </linearGradient>
+
+    <linearGradient id="cyanLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00eaff"/>
+      <stop offset="50%" stop-color="#00bfff"/>
+      <stop offset="100%" stop-color="#00eaff"/>
+    </linearGradient>
+
+    <linearGradient id="button" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#04273a"/>
+      <stop offset="100%" stop-color="#063d55"/>
+    </linearGradient>
+
+    <!-- =========================
+         HOVER STYLE
+    ========================== -->
+
+    <style>
+      .interactive {
+        cursor: pointer;
+        transition: all .25s ease;
+      }
+
+      .interactive:hover {
+        filter: url(#strongGlow);
+      }
+
+      .node {
+        cursor: pointer;
+      }
+
+      .node:hover rect {
+        fill: #082f45;
+        stroke: #00efff;
+        stroke-width: 3;
+        filter: url(#strongGlow);
+      }
+
+      .node:hover text {
+        fill: #ffffff;
+      }
+
+      .node:hover .nodeIcon {
+        filter: url(#strongGlow);
+      }
+
+      .repoButton {
+        cursor: pointer;
+      }
+
+      .repoButton:hover rect {
+        fill: #06455d;
+        stroke: #7df7ff;
+        stroke-width: 3;
+        filter: url(#strongGlow);
+      }
+
+      .repoButton:hover text {
+        fill: #ffffff;
+      }
+
+      .tag:hover rect {
+        fill: #082f45;
+        stroke: #00efff;
+        filter: url(#softGlow);
+      }
+
+      .tag:hover text {
+        fill: #ffffff;
+      }
+    </style>
+
+    <!-- =========================
+         GOOGLE FORMS ICON
+    ========================== -->
+
+    <g id="googleForms">
+      <rect x="0" y="0" width="34" height="42" rx="3"
+            fill="#673AB7"/>
+      <path d="M24 0 L34 10 L24 10 Z"
+            fill="#B39DDB"/>
+      <rect x="7" y="16" width="19" height="3" rx="1.5" fill="white"/>
+      <rect x="7" y="23" width="15" height="3" rx="1.5" fill="white"/>
+      <rect x="7" y="30" width="19" height="3" rx="1.5" fill="white"/>
+    </g>
+
+    <!-- =========================
+         MAKE ICON
+    ========================== -->
+
+    <g id="makeIcon">
+      <path d="M2 32 L9 5 L16 5 L13 32 Z"
+            fill="#7B2CFF"/>
+      <path d="M13 32 L19 5 L26 5 L23 32 Z"
+            fill="#A52DFF"/>
+      <path d="M24 32 L30 5 L37 5 L34 32 Z"
+            fill="#B72EFF"/>
+      <path d="M7 8 L12 8 L10 17 L5 17 Z"
+            fill="#6B22FF"/>
+    </g>
+
+    <!-- =========================
+         PDF ICON
+    ========================== -->
+
+    <g id="pdfIcon">
+      <path d="M4 1 H27 L36 10 V41 H4 Z"
+            fill="#F0443E"/>
+      <path d="M27 1 V10 H36"
+            fill="#FF8A80"/>
+      <path d="M10 25
+               C16 20 19 15 19 10
+               C19 17 21 24 29 28
+               C22 26 16 28 10 34
+               C13 28 13 25 10 25 Z"
+            fill="white"/>
+    </g>
+
+    <!-- =========================
+         GMAIL ICON
+    ========================== -->
+
+    <g id="gmailIcon">
+      <path d="M2 8 L18 20 L34 8 V35 H28 V16 L18 24 L8 16 V35 H2 Z"
+            fill="#EA4335"/>
+      <path d="M2 8 L8 13 V35 H2 Z"
+            fill="#4285F4"/>
+      <path d="M34 8 L28 13 V35 H34 Z"
+            fill="#34A853"/>
+      <path d="M2 8 L8 13 L18 20 L28 13 L34 8"
+            fill="none"
+            stroke="#FBBC04"
+            stroke-width="4"/>
+    </g>
+
+    <!-- =========================
+         DOCUMENT HEADER ICON
+    ========================== -->
+
+    <g id="documentIcon">
+      <circle cx="30" cy="30" r="29"
+              fill="#061c2d"
+              stroke="#00eaff"
+              stroke-width="2"/>
+      <use xlink:href="#googleForms"
+           x="13"
+           y="8"
+           width="34"
+           height="42"/>
+    </g>
+
+  </defs>
+
+
+  <!-- =========================
+       BACKGROUND
+  ========================== -->
+
+  <rect width="900" height="720" fill="url(#bg)"/>
+
+  <ellipse cx="110" cy="90" rx="230" ry="170"
+           fill="url(#cyanGlow)"
+           opacity=".55"/>
+
+  <ellipse cx="780" cy="600" rx="250" ry="180"
+           fill="url(#cyanGlow)"
+           opacity=".2"/>
+
+  <!-- subtle decorative lines -->
+  <path d="M0 620 C180 570 240 690 430 620 S720 560 900 620"
+        fill="none"
+        stroke="#07354c"
+        stroke-width="1"/>
+
+  <path d="M0 650 C200 610 300 700 470 650 S730 600 900 650"
+        fill="none"
+        stroke="#06263a"
+        stroke-width="1"/>
+
+
+  <!-- =========================
+       TOP LABEL
+  ========================== -->
+
+  <g class="interactive">
+    <rect x="30" y="28"
+          width="190"
+          height="70"
+          rx="15"
+          fill="#061c2e"
+          stroke="#00cfff"
+          stroke-opacity=".65"/>
+
+    <text x="52" y="57"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="14"
+          fill="#bfeeff">
+      ✦
+    </text>
+
+    <text x="78" y="56"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16"
+          fill="#d9f8ff">
+      Practical Solutions
+    </text>
+
+    <text x="78" y="78"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16"
+          fill="#d9f8ff">
+      Real Results
+    </text>
+  </g>
+
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <text x="450" y="65"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="42"
+        font-weight="700"
+        fill="#ffffff">
+    📄 Business Quotation
+  </text>
+
+  <text x="450" y="103"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="28"
+        font-weight="700"
+        fill="#00eaff">
+    Automation
+  </text>
+
+  <text x="450" y="132"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="17"
+        fill="#9ee9ff">
+    Automated quotation generation from form submission to delivery
+  </text>
+
+  <line x1="285" y1="151"
+        x2="615" y2="151"
+        stroke="url(#cyanLine)"
+        stroke-width="2"/>
+
+
+  <!-- =========================
+       MAIN CARD
+  ========================== -->
+
+  <rect x="25"
+        y="175"
+        width="850"
+        height="435"
+        rx="25"
+        fill="url(#card)"
+        stroke="#00eaff"
+        stroke-width="2"
+        filter="url(#shadow)"/>
+
+  <!-- top glow -->
+  <path d="M50 207
+           Q250 175 450 207
+           T850 207"
+        fill="none"
+        stroke="#00eaff"
+        stroke-opacity=".25"
+        stroke-width="2"/>
+
+
+  <!-- =========================
+       TITLE AREA
+  ========================== -->
+
+  <g class="interactive">
+
+    <use xlink:href="#documentIcon"
+         x="55"
+         y="205"/>
+
+    <text x="125"
+          y="235"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="30"
+          font-weight="700"
+          fill="#ffffff">
+      Business Quotation
+    </text>
+
+    <text x="125"
+          y="269"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="25"
+          font-weight="700"
+          fill="#00eaff">
+      Automation
+    </text>
+
+  </g>
+
+
+  <!-- featured badge -->
+
+  <g class="interactive">
+
+    <rect x="735"
+          y="214"
+          width="105"
+          height="34"
+          rx="17"
+          fill="#06283a"
+          stroke="#00dfff"/>
+
+    <text x="752"
+          y="237"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="14"
+          fill="#ffffff">
+      ♛ Featured
+    </text>
+
+  </g>
+
+
+  <!-- =========================
+       DESCRIPTION
+  ========================== -->
+
+  <text x="55"
+        y="315"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="17"
+        fill="#d9f8ff">
+    Automated quotation generation from form submission to delivery.
+  </text>
+
+
+  <!-- =========================
+       WORKFLOW NODES
+  ========================== -->
+
+  <!-- Google Forms -->
+
+  <a href="https://forms.google.com"
+     target="_blank">
+
+    <g class="node">
+
+      <rect x="55"
+            y="345"
+            width="140"
+            height="110"
+            rx="17"
+            fill="#061b2b"
+            stroke="#24708e"
+            stroke-width="1.5"/>
+
+      <use xlink:href="#googleForms"
+           x="108"
+           y="365"
+           width="34"
+           height="42"
+           class="nodeIcon"/>
+
+      <text x="125"
+            y="437"
+            text-anchor="middle"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="14"
+            font-weight="700"
+            fill="#ffffff">
+        Google Forms
+      </text>
+
+    </g>
+
+  </a>
+
+
+  <!-- Arrow 1 -->
+
+  <text x="215"
+        y="410"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="35"
+        fill="#00eaff">
+    →
+  </text>
+
+
+  <!-- Make -->
+
+  <a href="https://www.make.com"
+     target="_blank">
+
+    <g class="node">
+
+      <rect x="250"
+            y="345"
+            width="140"
+            height="110"
+            rx="17"
+            fill="#061b2b"
+            stroke="#24708e"
+            stroke-width="1.5"/>
+
+      <use xlink:href="#makeIcon"
+           x="299"
+           y="365"
+           width="42"
+           height="42"
+           class="nodeIcon"/>
+
+      <text x="320"
+            y="437"
+            text-anchor="middle"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="14"
+            font-weight="700"
+            fill="#ffffff">
+        Make.com
+      </text>
+
+    </g>
+
+  </a>
+
+
+  <!-- Arrow 2 -->
+
+  <text x="410"
+        y="410"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="35"
+        fill="#00eaff">
+    →
+  </text>
+
+
+  <!-- PDF -->
+
+  <g class="node">
+
+    <rect x="445"
+          y="345"
+          width="140"
+          height="110"
+          rx="17"
+          fill="#061b2b"
+          stroke="#24708e"
+          stroke-width="1.5"/>
+
+    <use xlink:href="#pdfIcon"
+         x="496"
+         y="365"
+         width="38"
+         height="42"
+         class="nodeIcon"/>
+
+    <text x="515"
+          y="437"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="14"
+          font-weight="700"
+          fill="#ffffff">
+      PDF Generation
+    </text>
+
+  </g>
+
+
+  <!-- Arrow 3 -->
+
+  <text x="605"
+        y="410"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="35"
+        fill="#00eaff">
+    →
+  </text>
+
+
+  <!-- Gmail -->
+
+  <a href="https://mail.google.com"
+     target="_blank">
+
+    <g class="node">
+
+      <rect x="640"
+            y="345"
+            width="140"
+            height="110"
+            rx="17"
+            fill="#061b2b"
+            stroke="#24708e"
+            stroke-width="1.5"/>
+
+      <use xlink:href="#gmailIcon"
+           x="691"
+           y="365"
+           width="38"
+           height="42"
+           class="nodeIcon"/>
+
+      <text x="710"
+            y="437"
+            text-anchor="middle"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="14"
+            font-weight="700"
+            fill="#ffffff">
+        Send via Gmail
+      </text>
+
+    </g>
+
+  </a>
+
+
+  <!-- =========================
+       EXPLANATION
+  ========================== -->
+
+  <g class="interactive">
+
+    <rect x="55"
+          y="480"
+          width="300"
+          height="62"
+          rx="14"
+          fill="#061e30"
+          stroke="#00dfff"
+          stroke-opacity=".8"/>
+
+    <text x="75"
+          y="506"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="15"
+          fill="#d9f8ff">
+      Collect client requirements
+    </text>
+
+    <text x="75"
+          y="528"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="15"
+          fill="#d9f8ff">
+      through a simple form
+    </text>
+
+  </g>
+
+
+  <!-- =========================
+       TECH TAGS
+  ========================== -->
+
+  <a href="https://www.make.com"
+     target="_blank">
+
+    <g class="tag">
+
+      <rect x="55"
+            y="558"
+            width="150"
+            height="36"
+            rx="18"
+            fill="#061b2b"
+            stroke="#0a7190"/>
+
+      <use xlink:href="#makeIcon"
+           x="70"
+           y="566"
+           width="25"
+           height="25"/>
+
+      <text x="105"
+            y="582"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="13"
+            fill="#d9f8ff">
+        Make.com
+      </text>
+
+    </g>
+
+  </a>
+
+
+  <g class="tag">
+
+    <rect x="215"
+          y="558"
+          width="190"
+          height="36"
+          rx="18"
+          fill="#061b2b"
+          stroke="#0a7190"/>
+
+    <text x="235"
+          y="582"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13"
+          fill="#d9f8ff">
+      🌐
+    </text>
+
+    <text x="258"
+          y="582"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13"
+          fill="#d9f8ff">
+      Google Workspace
+    </text>
+
+  </g>
+
+
+  <g class="tag">
+
+    <rect x="415"
+          y="558"
+          width="175"
+          height="36"
+          rx="18"
+          fill="#061b2b"
+          stroke="#0a7190"/>
+
+    <use xlink:href="#pdfIcon"
+         x="430"
+         y="564"
+         width="20"
+         height="25"/>
+
+    <text x="458"
+          y="582"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13"
+          fill="#d9f8ff">
+      PDF Automation
+    </text>
+
+  </g>
+
+
+  <!-- =========================
+       REPOSITORY BUTTON
+  ========================== -->
+
+  <a href="https://github.com/autopromptaiwork-dev/business-quotation-automation"
+     target="_blank">
+
+    <g class="repoButton">
+
+      <rect x="615"
+            y="558"
+            width="225"
+            height="40"
+            rx="20"
+            fill="url(#button)"
+            stroke="#00eaff"
+            stroke-width="1.5"/>
+
+      <text x="635"
+            y="584"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="15"
+            font-weight="700"
+            fill="#ffffff">
+        EXPLORE PROJECT
+      </text>
+
+      <text x="803"
+            y="584"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="20"
+            fill="#00eaff">
+        →
+      </text>
+
+    </g>
+
+  </a>
+
+
+  <!-- =========================
+       BOTTOM STAT
+  ========================== -->
+
+  <g class="interactive">
+
+    <rect x="615"
+          y="493"
+          width="225"
+          height="48"
+          rx="14"
+          fill="#061b2b"
+          stroke="#12617b"/>
+
+    <text x="635"
+          y="523"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="23"
+          font-weight="700"
+          fill="#00eaff">
+      100%
+    </text>
+
+    <text x="705"
+          y="523"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="13"
+          fill="#d9f8ff">
+      Automated Workflow
+    </text>
+
+  </g>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <line x1="55"
+        y1="650"
+        x2="845"
+        y2="650"
+        stroke="#0b3146"
+        stroke-width="1"/>
+
+  <g class="interactive">
+
+    <circle cx="85"
+            cy="680"
+            r="18"
+            fill="#061b2b"
+            stroke="#00eaff"/>
+
+    <text x="85"
+          y="686"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="18"
+          fill="#00eaff">
+      &lt;/&gt;
+    </text>
+
+    <text x="115"
+          y="678"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="14"
+          font-weight="700"
+          fill="#ffffff">
+      Real Projects
+    </text>
+
+    <text x="115"
+          y="696"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="11"
+          fill="#8ddff5">
+      Built and deployed
+    </text>
+
+  </g>
+
+
+  <g class="interactive">
+
+    <circle cx="335"
+            cy="680"
+            r="18"
+            fill="#061b2b"
+            stroke="#00eaff"/>
+
+    <text x="335"
+          y="687"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="19"
+          fill="#00eaff">
+      ⚡
+    </text>
+
+    <text x="365"
+          y="678"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="14"
+          font-weight="700"
+          fill="#ffffff">
+      Practical Impact
+    </text>
+
+    <text x="365"
+          y="696"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="11"
+          fill="#8ddff5">
+      Solving real business problems
+    </text>
+
+  </g>
+
+
+  <g class="interactive">
+
+    <circle cx="605"
+            cy="680"
+            r="18"
+            fill="#061b2b"
+            stroke="#00eaff"/>
+
+    <text x="605"
+          y="686"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="17"
+          fill="#00eaff">
+      ≡
+    </text>
+
+    <text x="635"
+          y="678"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="14"
+          font-weight="700"
+          fill="#ffffff">
+      Modern Tech Stack
+    </text>
+
+    <text x="635"
+          y="696"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="11"
+          fill="#8ddff5">
+      AI + Automation + APIs
+    </text>
+
+  </g>
+
+</svg>
