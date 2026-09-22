@@ -1,0 +1,889 @@
+<svg width="700" height="580" viewBox="0 0 700 580"
+     xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+  <!-- PURPLE CARD -->
+  <linearGradient id="cardPurpleFill" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#170f2e" stop-opacity="0.98"/>
+    <stop offset="100%" stop-color="#0f0a1f" stop-opacity="0.98"/>
+  </linearGradient>
+
+  <!-- CTA -->
+  <linearGradient id="ctaPurpleFill" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#241640"/>
+    <stop offset="100%" stop-color="#301a4d"/>
+  </linearGradient>
+
+  <!-- HOVER GLOW -->
+  <filter id="glowPurpleStrong"
+          x="-100%" y="-100%"
+          width="300%" height="300%">
+    <feGaussianBlur stdDeviation="10" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <!-- HOVER SWEEP -->
+  <linearGradient id="sweepGradPurple"
+                  x1="0%" y1="0%"
+                  x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#d8b4fe" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#d8b4fe" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#d8b4fe" stop-opacity="0"/>
+  </linearGradient>
+
+  <mask id="sweepMaskPurple"
+        maskUnits="userSpaceOnUse"
+        x="-20" y="-20"
+        width="740" height="620">
+    <rect x="-20" y="-20"
+          width="740" height="620"
+          fill="black"/>
+
+    <rect x="0" y="0"
+          width="700" height="580"
+          rx="22"
+          fill="none"
+          stroke="white"
+          stroke-width="5"/>
+  </mask>
+
+  <style>
+
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* CARD HOVER */
+    .project-card {
+      cursor: pointer;
+    }
+
+    .cardBorderPurple {
+      transition:
+        filter 0.25s ease,
+        stroke-width 0.25s ease;
+    }
+
+    .project-card:hover .cardBorderPurple {
+      stroke-width: 2.8;
+      filter: url(#glowPurpleStrong);
+    }
+
+    /* LIGHT SWEEP */
+    .sweepBarPurple {
+      animation-play-state: paused;
+    }
+
+    .project-card:hover .sweepBarPurple {
+      animation:
+        sweepDown 1.7s linear infinite;
+      animation-play-state: running;
+    }
+
+    @keyframes sweepDown {
+      0% {
+        transform: translateY(0px);
+      }
+
+      100% {
+        transform: translateY(580px);
+      }
+    }
+
+    /* WORKFLOW NODES */
+    .workflow-node {
+      transition:
+        transform 0.22s ease;
+      transform-box: fill-box;
+      transform-origin: center;
+      cursor: pointer;
+    }
+
+    .workflow-node .nodeBorder {
+      transition:
+        filter 0.22s ease,
+        stroke-width 0.22s ease;
+    }
+
+    .workflow-node:hover {
+      transform:
+        translateY(-4px)
+        scale(1.04);
+    }
+
+    .workflow-node:hover .nodeBorder {
+      stroke-width: 2.5;
+      filter: url(#glowPurpleStrong);
+    }
+
+    /* TECHNOLOGY PILLS */
+    .tech-pill {
+      transition:
+        transform 0.2s ease;
+      transform-box: fill-box;
+      transform-origin: center;
+      cursor: pointer;
+    }
+
+    .tech-pill .pillBorder {
+      transition:
+        filter 0.2s ease,
+        stroke-width 0.2s ease;
+    }
+
+    .tech-pill:hover {
+      transform:
+        translateY(-3px)
+        scale(1.03);
+    }
+
+    .tech-pill:hover .pillBorder {
+      stroke-width: 2.2;
+      filter: url(#glowPurpleStrong);
+    }
+
+    /* CTA */
+    .cta-button {
+      transition:
+        transform 0.25s ease;
+      transform-box: fill-box;
+      transform-origin: center;
+      cursor: pointer;
+    }
+
+    .cta-button .ctaBorder {
+      transition:
+        filter 0.25s ease,
+        stroke-width 0.25s ease;
+    }
+
+    .cta-button:hover {
+      transform:
+        translateY(-3px)
+        scale(1.02);
+    }
+
+    .cta-button:hover .ctaBorder {
+      stroke-width: 2.6;
+      filter: url(#glowPurpleStrong);
+    }
+
+  </style>
+
+</defs>
+
+
+<!-- ===================================================== -->
+<!-- MAIN CARD -->
+<!-- ===================================================== -->
+
+<g class="project-card">
+
+  <!-- CARD BACKGROUND -->
+  <rect
+    x="0"
+    y="0"
+    width="700"
+    height="580"
+    rx="22"
+    fill="url(#cardPurpleFill)"
+  />
+
+  <!-- CARD BORDER -->
+  <rect
+    class="cardBorderPurple"
+    x="0"
+    y="0"
+    width="700"
+    height="580"
+    rx="22"
+    fill="none"
+    stroke="#6b3fa0"
+    stroke-width="1.4"
+  />
+
+  <!-- HOVER LIGHT SWEEP -->
+  <g mask="url(#sweepMaskPurple)">
+    <rect
+      class="sweepBarPurple"
+      x="-20"
+      y="-140"
+      width="740"
+      height="140"
+      fill="url(#sweepGradPurple)"
+    />
+  </g>
+
+
+  <!-- DECORATIVE WAVE -->
+  <path
+    d="M10 510
+       C174 480, 374 550, 650 500"
+    stroke="#7c3aed"
+    stroke-width="1"
+    fill="none"
+    opacity="0.25"
+  />
+
+
+  <!-- ================================================= -->
+  <!-- ROBOT ICON -->
+  <!-- ================================================= -->
+
+  <circle
+    cx="90"
+    cy="82"
+    r="46"
+    fill="#150c26"
+    stroke="#6b3fa0"
+    stroke-width="1.4"
+  />
+
+  <rect
+    x="72"
+    y="68"
+    width="36"
+    height="28"
+    rx="8"
+    fill="#c084fc"
+  />
+
+  <circle
+    cx="82"
+    cy="80"
+    r="3"
+    fill="#150c26"
+  />
+
+  <circle
+    cx="98"
+    cy="80"
+    r="3"
+    fill="#150c26"
+  />
+
+  <line
+    x1="90"
+    y1="62"
+    x2="90"
+    y2="68"
+    stroke="#c084fc"
+    stroke-width="2"
+  />
+
+  <circle
+    cx="90"
+    cy="60"
+    r="2.5"
+    fill="#c084fc"
+  />
+
+
+  <!-- ================================================= -->
+  <!-- TITLE -->
+  <!-- ================================================= -->
+
+  <text
+    x="158"
+    y="72"
+    font-size="32"
+    font-weight="800"
+    fill="#f2f0fc">
+    AI LeadGen
+  </text>
+
+  <text
+    x="158"
+    y="108"
+    font-size="32"
+    font-weight="800"
+    fill="#c084fc">
+    Automation
+  </text>
+
+
+  <!-- FEATURED BADGE -->
+
+  <rect
+    x="558"
+    y="30"
+    width="112"
+    height="34"
+    rx="17"
+    fill="#170f2e"
+    stroke="#a855f7"
+    stroke-width="1"
+  />
+
+  <text
+    x="614"
+    y="52"
+    text-anchor="middle"
+    font-size="14"
+    fill="#e9d5ff">
+    ♛ Featured
+  </text>
+
+
+  <!-- DESCRIPTION -->
+
+  <text
+    x="40"
+    y="168"
+    font-size="18"
+    fill="#d8cdec">
+    AI-powered lead generation with automated data processing.
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- WORKFLOW 1 -->
+  <!-- ================================================= -->
+
+  <g class="workflow-node">
+
+    <rect
+      class="nodeBorder"
+      x="40"
+      y="200"
+      width="128"
+      height="100"
+      rx="14"
+      fill="#150c26"
+      stroke="#6b3fa0"
+      stroke-width="1.2"
+    />
+
+    <!-- LOCATION / DATA ICON -->
+
+    <circle
+      cx="104"
+      cy="236"
+      r="10"
+      fill="none"
+      stroke="#c084fc"
+      stroke-width="2"
+    />
+
+    <circle
+      cx="104"
+      cy="236"
+      r="3"
+      fill="#c084fc"
+    />
+
+    <text
+      x="104"
+      y="287"
+      text-anchor="middle"
+      font-size="15"
+      fill="#f0e9fb"
+      font-weight="600">
+      Business Data
+    </text>
+
+  </g>
+
+
+  <!-- ARROW -->
+
+  <text
+    x="182"
+    y="258"
+    font-size="22"
+    fill="#c084fc">
+    →
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- WORKFLOW 2 -->
+  <!-- ================================================= -->
+
+  <g class="workflow-node">
+
+    <rect
+      class="nodeBorder"
+      x="204"
+      y="200"
+      width="140"
+      height="100"
+      rx="14"
+      fill="#1c1030"
+      stroke="#a855f7"
+      stroke-width="1.6"
+    />
+
+    <!-- n8n STYLE ICON -->
+
+    <circle
+      cx="256"
+      cy="230"
+      r="4"
+      fill="#f472b6"
+    />
+
+    <circle
+      cx="272"
+      cy="240"
+      r="4"
+      fill="#f472b6"
+    />
+
+    <circle
+      cx="256"
+      cy="250"
+      r="4"
+      fill="#f472b6"
+    />
+
+    <line
+      x1="256"
+      y1="230"
+      x2="272"
+      y2="240"
+      stroke="#f472b6"
+      stroke-width="1.5"
+    />
+
+    <line
+      x1="272"
+      y1="240"
+      x2="256"
+      y2="250"
+      stroke="#f472b6"
+      stroke-width="1.5"
+    />
+
+    <text
+      x="274"
+      y="287"
+      text-anchor="middle"
+      font-size="15"
+      fill="#f0e9fb"
+      font-weight="700">
+      n8n + Gemini
+    </text>
+
+  </g>
+
+
+  <!-- ARROW -->
+
+  <text
+    x="354"
+    y="258"
+    font-size="22"
+    fill="#c084fc">
+    →
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- WORKFLOW 3 -->
+  <!-- ================================================= -->
+
+  <g class="workflow-node">
+
+    <rect
+      class="nodeBorder"
+      x="376"
+      y="200"
+      width="128"
+      height="100"
+      rx="14"
+      fill="#150c26"
+      stroke="#6b3fa0"
+      stroke-width="1.2"
+    />
+
+    <!-- DOCUMENT ICON -->
+
+    <rect
+      x="424"
+      y="222"
+      width="24"
+      height="28"
+      rx="3"
+      fill="#8b5cf6"
+    />
+
+    <rect
+      x="429"
+      y="228"
+      width="14"
+      height="2.5"
+      fill="#eef2ff"
+    />
+
+    <rect
+      x="429"
+      y="234"
+      width="14"
+      height="2.5"
+      fill="#eef2ff"
+    />
+
+    <text
+      x="440"
+      y="287"
+      text-anchor="middle"
+      font-size="15"
+      fill="#f0e9fb"
+      font-weight="600">
+      Clean Leads
+    </text>
+
+  </g>
+
+
+  <!-- ARROW -->
+
+  <text
+    x="516"
+    y="258"
+    font-size="22"
+    fill="#c084fc">
+    →
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- WORKFLOW 4 -->
+  <!-- ================================================= -->
+
+  <g class="workflow-node">
+
+    <rect
+      class="nodeBorder"
+      x="540"
+      y="200"
+      width="128"
+      height="100"
+      rx="14"
+      fill="#150c26"
+      stroke="#6b3fa0"
+      stroke-width="1.2"
+    />
+
+    <!-- CHART ICON -->
+
+    <rect
+      x="584"
+      y="238"
+      width="5"
+      height="12"
+      fill="#c084fc"
+    />
+
+    <rect
+      x="593"
+      y="230"
+      width="5"
+      height="20"
+      fill="#c084fc"
+    />
+
+    <rect
+      x="602"
+      y="222"
+      width="5"
+      height="28"
+      fill="#c084fc"
+    />
+
+    <text
+      x="604"
+      y="287"
+      text-anchor="middle"
+      font-size="15"
+      fill="#f0e9fb"
+      font-weight="600">
+      Ready to Use
+    </text>
+
+  </g>
+
+
+  <!-- ================================================= -->
+  <!-- DESCRIPTION CALLOUT -->
+  <!-- ================================================= -->
+
+  <rect
+    x="40"
+    y="320"
+    width="290"
+    height="58"
+    rx="12"
+    fill="#150c26"
+    stroke="#a855f7"
+    stroke-width="1"
+    opacity="0.9"
+  />
+
+  <text
+    x="56"
+    y="342"
+    font-size="14"
+    fill="#ece3f8">
+    Process and enrich data
+  </text>
+
+  <text
+    x="56"
+    y="362"
+    font-size="14"
+    fill="#ece3f8">
+    with AI
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- TECH PILL: n8n -->
+  <!-- ================================================= -->
+
+  <g class="tech-pill">
+
+    <rect
+      class="pillBorder"
+      x="40"
+      y="408"
+      width="108"
+      height="42"
+      rx="21"
+      fill="#150c26"
+      stroke="#6b3fa0"
+      stroke-width="1.2"
+    />
+
+    <circle
+      cx="60"
+      cy="429"
+      r="3"
+      fill="#f472b6"
+    />
+
+    <circle
+      cx="72"
+      cy="423"
+      r="3"
+      fill="#f472b6"
+    />
+
+    <line
+      x1="60"
+      y1="429"
+      x2="72"
+      y2="423"
+      stroke="#f472b6"
+      stroke-width="1.3"
+    />
+
+    <text
+      x="114"
+      y="434"
+      text-anchor="middle"
+      font-size="14"
+      fill="#f0e9fb">
+      n8n
+    </text>
+
+  </g>
+
+
+  <!-- ================================================= -->
+  <!-- TECH PILL: GEMINI -->
+  <!-- ================================================= -->
+
+  <g class="tech-pill">
+
+    <rect
+      class="pillBorder"
+      x="162"
+      y="408"
+      width="130"
+      height="42"
+      rx="21"
+      fill="#150c26"
+      stroke="#6b3fa0"
+      stroke-width="1.2"
+    />
+
+    <path
+      d="M188 420
+         l3 9
+         l9 3
+         l-9 3
+         l-3 9
+         l-3 -9
+         l-9 -3
+         l9 -3 z"
+      fill="#c084fc"
+    />
+
+    <text
+      x="234"
+      y="434"
+      text-anchor="middle"
+      font-size="14"
+      fill="#f0e9fb">
+      Gemini
+    </text>
+
+  </g>
+
+
+  <!-- ================================================= -->
+  <!-- TECH PILL: BRIGHT DATA -->
+  <!-- ================================================= -->
+
+  <g class="tech-pill">
+
+    <rect
+      class="pillBorder"
+      x="306"
+      y="408"
+      width="164"
+      height="42"
+      rx="21"
+      fill="#150c26"
+      stroke="#6b3fa0"
+      stroke-width="1.2"
+    />
+
+    <rect
+      x="326"
+      y="419"
+      width="16"
+      height="6"
+      rx="3"
+      fill="#8b5cf6"
+    />
+
+    <rect
+      x="326"
+      y="427"
+      width="16"
+      height="6"
+      rx="3"
+      fill="#8b5cf6"
+    />
+
+    <rect
+      x="326"
+      y="435"
+      width="16"
+      height="6"
+      rx="3"
+      fill="#8b5cf6"
+    />
+
+    <text
+      x="390"
+      y="434"
+      text-anchor="middle"
+      font-size="14"
+      fill="#f0e9fb">
+      Bright Data
+    </text>
+
+  </g>
+
+
+  <!-- ================================================= -->
+  <!-- EXPLORE PROJECT BUTTON -->
+  <!-- ================================================= -->
+
+  <g class="cta-button">
+
+    <rect
+      class="ctaBorder"
+      x="40"
+      y="490"
+      width="320"
+      height="60"
+      rx="30"
+      fill="url(#ctaPurpleFill)"
+      stroke="#a855f7"
+      stroke-width="1.4"
+    />
+
+    <text
+      x="200"
+      y="527"
+      text-anchor="middle"
+      font-size="17"
+      font-weight="800"
+      fill="#ffffff"
+      letter-spacing="1">
+      EXPLORE PROJECT →
+    </text>
+
+  </g>
+
+
+  <!-- ================================================= -->
+  <!-- 10X STAT -->
+  <!-- ================================================= -->
+
+  <rect
+    x="400"
+    y="490"
+    width="250"
+    height="60"
+    rx="14"
+    fill="#150c26"
+    stroke="#a855f7"
+    stroke-width="1"
+    opacity="0.9"
+  />
+
+  <rect
+    x="420"
+    y="520"
+    width="6"
+    height="14"
+    fill="#c084fc"
+  />
+
+  <rect
+    x="430"
+    y="514"
+    width="6"
+    height="20"
+    fill="#c084fc"
+  />
+
+  <rect
+    x="440"
+    y="508"
+    width="6"
+    height="26"
+    fill="#c084fc"
+  />
+
+  <text
+    x="460"
+    y="516"
+    font-size="20"
+    font-weight="800"
+    fill="#f2f0fc">
+    10x
+  </text>
+
+  <text
+    x="460"
+    y="534"
+    font-size="12"
+    fill="#d8b4fe">
+    Faster Lead Research
+  </text>
+
+</g>
+
+</svg>
